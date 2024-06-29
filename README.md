@@ -18,6 +18,9 @@ For my future self.
 ## ToDo
 
 - [ ] Update ToDo
+- [ ] ディレクトリ作成 (scrap, article)
+- [ ] 他の場所からここへテキストを持ってくる
+- [ ] front matter をどうするか問題
 
 ## Log
 

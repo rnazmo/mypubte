@@ -22,6 +22,10 @@ For my future self.
 - [ ] 他の場所からここへテキストを持ってくる
 - [ ] front matter をどうするか問題
 
+### Pending
+
+- [ ] GitLab へリポジトリを移行する？
+
 ## Log
 
 - 2024-06-29

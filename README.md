@@ -2,18 +2,28 @@
 
 My public texts on engineering.
 
-## Purpose of this repo
+## 目的 (Purpose of this repo)
 
 For my future self.
 
-## Convention
+## 運用 (Convention)
 
-- Issue, Pull requests: 使わない MUST
-  - 理由：管理コストを下げる && 検索性を上げる && GitLab へ移行する可能性を考え、GitHub への依存を減らす
-- branch: main 以外使わない SHOULD
-  - ただし、その場で即 merge するならば使っておｋ
-  - 理由：同上
-- commit message: 適当でおｋ
+- Issue:
+  - 使わない MUST
+    - 理由：管理コストを下げる、検索性を上げる、GitHub への依存を減らす
+- Pull request:
+  - 使わない MUST
+    - 理由：同上
+- Branch:
+  - main だけ使う SHOULD
+  - ただし、その場で即 merge するならば main 以外を作っても良い
+    - 理由：同上
+- Commit message:
+  - 適当でOK
+    - 理由：Blame しやすさや History の見やすさよりも、「継続的に（mypubte を）書く」方がずっと大事
+- Commit の粒度：
+  - 適当でOK
+    - 理由：同上
 
 ## ToDo
 
@@ -26,7 +36,7 @@ For my future self.
 
 - [ ] GitLab へリポジトリを移行する？
 
-## Log
+## Repository Log
 
 - 2024-06-29
   - 「技術系のパブリックなテキストをまとめておく場所」が欲しかったので作ってみた

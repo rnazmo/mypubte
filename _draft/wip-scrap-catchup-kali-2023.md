@@ -59,6 +59,9 @@ TODO:
 - Internal Infrastructure
     - Update packaging Tools (to have a peek at some back-end development)
 - new sub-domain, mirror-traces.kali.org
+    - https://mirror-traces.kali.org/
+        - site src: https://gitlab.com/kalilinux/tools/mirror-status
+    - 面白い。存在を知っておくと便利そうかも？
 - Kali Autopilot
 
 ### v2023.4

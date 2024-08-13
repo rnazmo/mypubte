@@ -25,16 +25,10 @@ For my future self.
   - 適当でOK
     - 理由：同上
 
-## ToDo
+## TODO
 
-- [ ] Update ToDo
-- [ ] ディレクトリ作成 (scrap, article)
 - [ ] 他の場所からここへテキストを持ってくる
-- [ ] front matter をどうするか問題
-
-### Pending
-
-- [ ] GitLab へリポジトリを移行する？
+- [ ] Add static checker (lint & format as mymetag, Markdown, text)
 
 ## Repository Log
 

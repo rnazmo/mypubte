@@ -8,7 +8,7 @@ last_updated_at:
 last_reviewed_at:
 categories: ["series::catchup::kali", "OS::Kali"]
 tags: ["pip (Pip Installs Packages)", "venv (python)", "desktop-environment::Xfce", "i3 (window manager)"]
-keywords: ["Kali Linux::Kali Purple", "defensive security", "SOC (Security Operations Center)", "Python", "Kali Linux::Kali Autopilot"]
+keywords: ["Kali Linux::Kali Purple", "defensive security", "SOC (Security Operations Center)", "Python", "Kali Linux::Kali Autopilot", "Thunar (file manager)"]
 title: "catchup::kali］v2023.1 - v2023.4 のキャッチアップ（2023-01 - 2023-12"
 aliases: ["catchup::kali］Catch up on v2023.1 - v2023.4（2023-01 - 2023-12]
 ---
@@ -69,15 +69,22 @@ See: [catchup］catchup シリーズのテキストを書く目的・方針（v2
 
 ### desktop&theme: 2023 テーマリフレッシュ
 
--TODO:
-- Theme Refresh:
+- テーマの更新:
     - 年に一度のテーマ更新
-- Desktop Updates:
-    - Xfce
-        - ファイルマネージャー Thunar に機能追加
+    - 10周年ということで、過去の象徴的なリリースを参照したものになっている
+    - 追加バージョンを含めた壁紙はパッケージ `kali-wallpapers-legacy` から入手できる
+        - [kali-wallpapers | Kali Linux Tools](https://www.kali.org/tools/kali-wallpapers/#kali-wallpapers-legacy)
+        - [Kali Linux / Packages / kali-wallpapers · GitLab](https://gitlab.com/kalilinux/packages/kali-wallpapers)
+- デスクトップの更新:
+    - Xfce:
+        - ファイルマネージャー Thunar に機能追加（分割ビューなど）
         - インポート/エクスポート機能を備えたパネル プロファイルのサポート
-            - これで、デスクトップ パネルを好みに合わせて変更し、安全な場所に保存 (または共有) できます。アプリに含まれるすべての事前構築済みレイアウトとは別に、デフォルトKali設定のプロファイルと、小型ディスプレイに適した新しいKali compactプロファイルを追加しました
-        
+            - デスクトップ パネルを好みに変更し、保存 (または共有) が可能に。アプリに含まれているすべてのビルド済みレイアウトとは別に、次の 2 つのプロファイルが追加されている。デフォルトの設定用プロファイル `Kali` と、小型ディスプレイ用の `Kali compact` プロファイル
+
+### カーネルのデフォルト値の一部を更新
+
+-TODO:
+
 ### WSL アプリケーションリポジトリを公開
 
 -TODO:

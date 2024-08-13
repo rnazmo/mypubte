@@ -1,5 +1,7 @@
 ---
 frontmatter_version: TODO
+id: "fe3d42f4-afc9-45ab-bfbc-49b197cbe513"
+type: Scrap
 drafted: 2024-07-06T04:31
 created: 2024-07-06T04:41
 updated: N/A
@@ -8,7 +10,6 @@ title: "［Bash］Bashのバージョン番号が一定以上であることを�
 title_en: TODO
 tags: ["bash", "bash_script"]
 categories: ["bash"]
-id: "fe3d42f4-afc9-45ab-bfbc-49b197cbe513"
 ---
 
 ## TL;DR

@@ -33,7 +33,7 @@ See: [catchup］catchup シリーズのテキストを書く目的・方針（v2
 - Kali Purple 始めました
 - python の更新に伴い、pip まわりに罠があるので、モジュールインストール時には注意が必要
     - 注：これよくわからなかった
--TODO:
+- TODO:
 
 ### website: Kali の 10 周年記念の記事が公開
 
@@ -83,15 +83,15 @@ See: [catchup］catchup シリーズのテキストを書く目的・方針（v2
 
 ### カーネルのデフォルト値の一部を更新
 
--TODO:
+- TODO:
 
 ### WSL アプリケーションリポジトリを公開
 
--TODO:
+- TODO:
 
 ### tools: 新しいツール
 
--TODO:
+- TODO:
 - Cyber​​Chef - サイバースイスアーミーナイフ
 - Kubernetes-Helm - チャートの管理
 - Redeye
@@ -100,15 +100,15 @@ See: [catchup］catchup シリーズのテキストを書く目的・方針（v2
 
 ### リリース情報の入手先
 
--TODO:
+- TODO:
 
 ### まとめ
 
--TODO:
+- TODO:
 
 ### desktop&theme: 2024 テーマリフレッシュ
 
--TODO:
+- TODO:
 - Xfce:
     - Xfce オーディオ スタックのアップデート
         - Kali のデフォルト デスクトップのオーディオ スタックが変更され、 PulseAudio がPipeWireに置き換えられました。
@@ -124,45 +124,45 @@ See: [catchup］catchup シリーズのテキストを書く目的・方針（v2
 
 ### リリース情報の入手先
 
--TODO:
+- TODO:
 
 ### まとめ
 
--TODO:
+- TODO:
 
 ### Internal Infrastructure
 
 - Update packaging Tools (to have a peek at some back-end development)
--TODO:
+- TODO:
 
 ### new sub-domain, mirror-traces.kali.org
 
--TODO:
+- TODO:
 - https://mirror-traces.kali.org/
     - site src: https://gitlab.com/kalilinux/tools/mirror-status
     - 面白い。存在を知っておくと便利そうかも？
 
 ### Kali Autopilot
 
--TODO:
+- TODO:
 
 ## v2023.4
 
 ### リリース情報の入手先
 
--TODO:
+- TODO:
 
 ### まとめ
 
--TODO:
+- TODO:
 
 ### Vagrant が Hyper-V をサポートするようになりました
 
--TODO:
+- TODO:
 
 ## 感想
 
--TODO:
+- TODO:
 
 ## 関連リンク
 

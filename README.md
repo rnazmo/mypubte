@@ -29,6 +29,7 @@ For my future self.
 
 - [ ] 他の場所からここへテキストを持ってくる
 - [ ] Add static checker (lint & format as mymetag, Markdown, text)
+- [ ] 画像対応
 
 ## Repository Log
 

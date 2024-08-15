@@ -179,7 +179,7 @@ See: [catchup］catchup シリーズのテキストを書く目的・方針（v2
 
 ### リリース情報の入手先
 
-- TODO:
+- [Kali Linux 2023.3 Release (Internal Infrastructure & Kali Autopilot) | Kali Linux Blog](https://www.kali.org/blog/kali-linux-2023-3-release/)
 
 ### まとめ
 

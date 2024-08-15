@@ -8,7 +8,7 @@ last_updated_at:
 last_reviewed_at:
 categories: ["series::catchup::kali", "OS::Kali"]
 tags: ["pip (Pip Installs Packages)", "venv (python)", "desktop-environment::Xfce", "i3 (window manager)", "NVIDIA", "tool::Cyber​​Chef"]
-keywords: ["Kali Linux::Kali Purple", "defensive security", "SOC (Security Operations Center)", "Python", "Kali Linux::Kali Autopilot", "Thunar (file manager)", "kernel"]
+keywords: ["Kali Linux::Kali Purple", "defensive security", "SOC (Security Operations Center)", "Python", "Kali Linux::Kali Autopilot", "Thunar (file manager)", "kernel", "kali-tweaks", "PulseAudio", "PipeWire", "tools::Trivy"]
 title: "catchup::kali］v2023.1 - v2023.4 のキャッチアップ（2023-01 - 2023-12"
 aliases: ["catchup::kali］Catch up on v2023.1 - v2023.4（2023-01 - 2023-12]
 ---
@@ -34,7 +34,7 @@ See: [catchup］catchup シリーズのテキストを書く目的・方針（v2
 - python の更新に伴い、pip まわりに罠があるので、モジュールインストール時には注意が必要
     - 注：これよくわからなかった
 - いくつか気になるツールがある
-    - 特に Cyber​​Chef は必須では
+    - Cyber​​Chef など
 - カーネルのデフォルト設定の一部について
     - 1024 以下のポートを使用するのに root 権限が不要になった
     - `dmesg` を実行するのに root 権限が不要になった
@@ -129,25 +129,51 @@ See: [catchup］catchup シリーズのテキストを書く目的・方針（v2
 
 ### リリース情報の入手先
 
-- TODO:
+- [Kali Linux 2023.2 Release (Hyper-V & PipeWire) | Kali Linux Blog](https://www.kali.org/blog/kali-linux-2023-2-release/)
 
 ### まとめ
 
-- TODO:
+- デスクトップまわりの更新：
+    - Xfce:
+        - オーディオスタックが PulseAudio から PipeWire に変更された
+            - ユーザー視点では特に変更なし
+        - ファイル マネージャー（Thunar）に拡張機能 GtkHash がプリインストールされた
+            - GUI で簡単にハッシュ計算できるように
+                - ファイルを右クリックして "Checksums" タブを開くだけ！
+    - i3:
+        - オーバーホール（i3-gaps が i3 と統合された）
+- いくつか気になるツールがある
+    - Trivy など
 
 ### desktop&theme: 2024 テーマリフレッシュ
 
-- TODO:
 - Xfce:
-    - Xfce オーディオ スタックのアップデート
-        - Kali のデフォルト デスクトップのオーディオ スタックが変更され、 PulseAudio がPipeWireに置き換えられました。
-    - GUI での簡単なハッシュ計算
-        - このリリースでは、Xfce ファイル マネージャー用の便利な拡張機能GtkHashがプリインストールされています。この拡張機能は、ファイルを右クリックして[チェックサム]タブを開くだけで、チェックサムをすばやく計算するオプションを提供します。
+    - Xfce オーディオ スタックのアップデート：
+        - Kali のデフォルトのデスクトップオーディオスタックが変更され、PulseAudio が PipeWire に置き換えられた
+            - PipeWire は「Linux 上でオーディオ、ビデオ ストリーム、ハードウェアを処理するためのサーバー」
+            - 現在ほぼすべての Linux ディストリビューションで事実上のサウンド サーバーとなり、PulseAudio に取って代わろうとしている
+            - ユーザー視点では特に変更なし
+            - Related: [No sound on Kali 2023.2 | Kali Linux Documentation](https://www.kali.org/docs/troubleshooting/no-sound/)
+    - GUI での簡単なハッシュ計算：
+        - Xfce ファイル マネージャー用の便利な拡張機能 GtkHash がプリインストールされる。この拡張機能は、「ファイルを右クリックして "Checksums" タブを開くだけで、チェックサムをすばやく計算する」機能を提供する
+        - 便利そう
 - i3:
     - i3 デスクトップのオーバーホール
-        - i3-gaps が i3 と統合されました
-        - 試したいな
+        - i3-gaps が i3 と統合された
+        - ずっと i3 試したいと思いつつ試せてない
 - アイコンとメニューの更新
+
+### tools: 新しいツール
+
+- GoPhish - オープンソースのフィッシングツールキット
+- Terraform - 安全かつ予測可能なインフラストラクチャの作成、変更、改善
+- Trivy - コンテナ、Kubernetes、コードリポジトリ、クラウドなどの脆弱性、構成ミス、シークレット、SBOM を見つける
+
+### website: Kali Documentation のアップデート
+
+- いくつかのページが更新：
+  - デュアルブートの修正 ([Fixing Dual Boot](https://www.kali.org/docs/troubleshooting/dual-boot/))
+  - APT まわりのよくある問題への対処 ([Handling common APT problems](https://www.kali.org/docs/troubleshooting/handling-common-apt-errors/))
 
 ## v2023.3
 

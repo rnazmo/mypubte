@@ -7,8 +7,8 @@ created_at: 2024-08-14T01:06
 last_updated_at:
 last_reviewed_at:
 categories: ["series::catchup::kali", "OS::Kali"]
-tags: ["pip (Pip Installs Packages)", "venv (python)", "desktop-environment::Xfce", "i3 (window manager)"]
-keywords: ["Kali Linux::Kali Purple", "defensive security", "SOC (Security Operations Center)", "Python", "Kali Linux::Kali Autopilot", "Thunar (file manager)"]
+tags: ["pip (Pip Installs Packages)", "venv (python)", "desktop-environment::Xfce", "i3 (window manager)", "NVIDIA", "tool::Cyber​​Chef"]
+keywords: ["Kali Linux::Kali Purple", "defensive security", "SOC (Security Operations Center)", "Python", "Kali Linux::Kali Autopilot", "Thunar (file manager)", "kernel"]
 title: "catchup::kali］v2023.1 - v2023.4 のキャッチアップ（2023-01 - 2023-12"
 aliases: ["catchup::kali］Catch up on v2023.1 - v2023.4（2023-01 - 2023-12]
 ---
@@ -33,7 +33,12 @@ See: [catchup］catchup シリーズのテキストを書く目的・方針（v2
 - Kali Purple 始めました
 - python の更新に伴い、pip まわりに罠があるので、モジュールインストール時には注意が必要
     - 注：これよくわからなかった
-- TODO:
+- いくつか気になるツールがある
+    - 特に Cyber​​Chef は必須では
+- カーネルのデフォルト設定の一部について
+    - 1024 以下のポートを使用するのに root 権限が不要になった
+    - `dmesg` を実行するのに root 権限が不要になった
+    - これらの設定は `kali-tweaks` から簡単に変更できる
 
 ### website: Kali の 10 周年記念の記事が公開
 
@@ -81,20 +86,44 @@ See: [catchup］catchup シリーズのテキストを書く目的・方針（v2
         - インポート/エクスポート機能を備えたパネル プロファイルのサポート
             - デスクトップ パネルを好みに変更し、保存 (または共有) が可能に。アプリに含まれているすべてのビルド済みレイアウトとは別に、次の 2 つのプロファイルが追加されている。デフォルトの設定用プロファイル `Kali` と、小型ディスプレイ用の `Kali compact` プロファイル
 
-### カーネルのデフォルト値の一部を更新
+### カーネルのデフォルト設定の一部を更新
 
-- TODO:
+- カーネルのデフォルト設定の一部を更新された
+    - 使いやすさ向上のためのちょっとした変更
+- 変更内容：
+    - 特権ポートの廃止：1024 以下のポートを使用するプログラムを実行するのに root 権限が不要になった
+        - この変更は [Kali 2021.2](https://www.kali.org/blog/kali-linux-2021-2-release/#disabled-privileged-ports) で行われていて、今回はそれの再掲
+    - `dmesg` に対する制限の廃止：`dmesg` を実行するのに root 権限が不要になった
+- これらの設定は `kali-tweaks` から簡単に変更できる
+- カーネルの変更点についての詳細は次リンクを参照:
+    - [Kernel Configuration | Kali Linux Documentation](https://www.kali.org/docs/general-use/kernel-configuration/#dmesg-unrestricted-sysctl)
+    - [Kali Linux 2021.2 Release #Disabled Privileged Ports | Kali Linux Blog](https://www.kali.org/blog/kali-linux-2021-2-release/#disabled-privileged-ports)
 
-### WSL アプリケーションリポジトリを公開
+### Nvidia に関するトラブル
 
-- TODO:
+- Nvidia ドライバーの 525 シリーズは、一部の GPU モデルで動作しないことが知られている
+- どのモデルが該当するか正確なところは不明だが、基本的にすべての Linux ディストリビューションからさまざまな報告がある
+    - 当然 Kali Linux も含まれる
+- 症状：
+    - システムが遅くなったり、応答しなくなったり、完全にフリーズしたりする
+- 対処：
+    - Nvidia ドライバーをアンインストールして再起動する
+        - `sudo apt purge "*nvidia*" && sudo reboot -f`
+            - ターミナルが開けない場合はリカバリ モードとかを使う
+
+### WSL アプリケーションのリポジトリを公開
+
+- Link: [Kali Linux / Build-Scripts / kali-wsl-app · GitLab](https://gitlab.com/kalilinux/build-scripts/kali-wsl-app)
+    - 公開されたらしいので一応メモっておくが、特に読む機会はなさそう
 
 ### tools: 新しいツール
 
-- TODO:
+- Arkime - 大規模、オープンソース、インデックス付きパケットキャプチャおよび検索ツール
 - Cyber​​Chef - サイバースイスアーミーナイフ
+    - 逆に今まで入っていなかったのか
+        - まあ基本は Web 版で十分と言えば十分かも
 - Kubernetes-Helm - チャートの管理
-- Redeye
+- Redeye - 最も効率的かつ整理された方法で、ペンテスト・オペレーション中のデータを管理できる
 
 ## v2023.2
 

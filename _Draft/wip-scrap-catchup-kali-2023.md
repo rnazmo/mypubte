@@ -6,7 +6,7 @@ drafted_at: 2024-08-10T18:52
 created_at: 2024-08-14T01:06
 last_updated_at:
 last_reviewed_at:
-categories: ["series::catchup::kali", "OS::Kali"]
+categories: ["series::catchup", "OS::Kali"]
 tags: ["pip (Pip Installs Packages)", "venv (python)", "desktop-environment::Xfce", "i3 (window manager)", "NVIDIA", "tool::Cyber​​Chef"]
 keywords: ["Kali Linux::Kali Purple", "defensive security", "SOC (Security Operations Center)", "Python", "Kali Linux::Kali Autopilot", "Thunar (file manager)", "kernel", "kali-tweaks", "PulseAudio", "PipeWire", "tools::Trivy"]
 title: "catchup::kali］v2023.1 - v2023.4 のキャッチアップ（2023-01 - 2023-12"

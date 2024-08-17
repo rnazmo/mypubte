@@ -1,0 +1,250 @@
+---
+last updated at: 2024-08-17T19:18
+---
+
+# Used
+
+## OK
+
+series::catchup
+tool::Git
+OS::Kali
+writing
+security
+tool::Cyber​​Chef
+tool::nmap
+series::check-info
+
+## Needs Improvement
+
+desktop-environment::Xfce
+i3 (window manager)
+computer language::data exchange language::YAML
+CLI
+keyboard-shortcut
+bash
+bash_script
+YAML
+NVIDIA
+lang::en::英語に変換
+language::english::英語に変換
+language::english::単語の違い
+lang::ja::読み方
+language::japanese::読み方
+language::japanese::単語の違い
+pip (Pip Installs Packages)
+venv (python)
+topic::2024-03-xz-utils-backdoor(CVE-2024-3094)
+Diary
+mypubteing
+
+## Bad
+
+meta::mypubte::workflow::published
+meta::broken-frontmatter
+meta::mypubte::workflow::waiting-for-review
+meta::mypubte::workflow::waiting-for-update
+
+# Unused (候補)
+
+series::
+  helloworld
+  writeup
+OS::
+  Windows
+  macOS
+  Ubuntu
+  Android
+  GUI??:: (or desktop (computing))?
+    desktop-environment::
+      Xfce
+      MATE
+      GNOME
+      KDE
+    window manager::
+      i3
+hosting:: (or hosting-service?)
+  source-code-hosting::
+    GitHub
+    GitLab
+    Bitbucket
+    Gitea
+    SourceForge
+  web-hosting??
+programming-language::
+  Go
+  JavaScript
+  Python
+  cpp
+  csharp
+  TypeScript
+  awk (programming language)
+librariy-and-framework::
+  Rails
+  React (JavaScript)
+  Vue (JavaScript)
+  Gatsuby (JavaScript)
+  Next (JavaScript)
+  bootstrap
+  tailwindcss
+  Django
+  echo (golang)
+  gin (golang)
+  Hugo
+tool?::
+  jq
+  Chrome
+  FireFox
+  Obsidian
+  neovim
+  tmux
+  sed
+  github-cli
+  VirtualBox
+  awk (tool) -> "See: awk (programming language)"
+  ...(∞)
+computer language::
+  programming language::
+    ...
+    (低水準言語)::
+      機械語
+      アセンブリ言語 (= assembly language = アセンブリ assembly = アセンブラ = assembler = アセンブラ言語 = assembler language)
+    (高水準言語)::
+      Python
+      Ruby
+      Go
+      ...
+  data exchange language::
+    YAML
+    TOML
+    JSON
+    XML
+  markup language::
+    HTML
+    TeX/LaTeX
+    Markdown
+    XML
+  style sheet language::
+    CSS
+  modeling language::?
+    UML (Unified Modeling Language)
+
+CPU
+RAM
+PSU (power supply unit)
+hardware
+インタプリタ
+コンパイラ
+ミドルウェア
+仮想マシン
+
+SSG (Static Site Generator)
+
+Editor (programming)
+
+Image file format?
+SVG?
+npm?
+pip?
+Bash
+Zsh
+apt
+pacman
+pamac
+
+web service???:: web app?? web site??
+  CyberChef (gchq.github.io/CyberChef)
+  DeepL (deepl.com/translator)
+  ChatGPT (chatgpt.com)
+  Perplexity (www.perplexity.ai)
+  DuckDuckGo (duckduckgo.com)
+  Wikipedia (wikipedia.org)
+
+multimedia compression format:: (マルチメディア圧縮フォーマット)
+  video compression::
+    H.264
+  audio compression::
+    MP3
+    AAC
+    FLAC
+  image compression::
+    GIF
+    JPEG
+    PNG
+  container??::
+    mp4?
+
+ブラウザ拡張機能?
+Chrome 拡張機能?
+FireFox 拡張機能?
+VS Code 拡張機能？
+
+web site??:
+  MDN (Mozilla Developer Network)
+OpenAI
+generative AI
+AI
+LLM
+web search engine
+
+linux command?
+powershell
+
+programming?
+~~development?~~
+software-development?
+webdev?
+beginners
+tutorial
+news
+
+CUI
+GUI
+software-development::
+  testing?
+  devops
+database (DB)
+RDB?
+SQL
+DBMS
+MySQL
+PostgreSQL
+NoSQL
+
+AWS
+opensource
+machine learning
+architecture
+Docker
+kubernetes
+ui
+ux
+
+series::discuss
+series::showdev (`Show off what you've built!`)
+
+Vercel
+cloudflare
+Google Cloud
+Apple
+Google
+  Google Map?
+
+URL
+www
+HTTP
+SPA
+semantic web
+web
+Tor
+
+Web Performance?
+正規表現 (Regular Expression)
+
+series::buildapc (build a pc)
+
+# temporary note
+
+- なるべく早くここではなく別の場所へ移すべきメモ
+- taxonomy ∋ category + tag
+  - taxonomy ∌ keyword

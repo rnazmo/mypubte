@@ -39,13 +39,6 @@ topic::2024-03-xz-utils-backdoor(CVE-2024-3094)
 Diary
 mypubteing
 
-## Bad
-
-meta::mypubte::workflow::published
-meta::broken-frontmatter
-meta::mypubte::workflow::waiting-for-review
-meta::mypubte::workflow::waiting-for-update
-
 # Unused (候補)
 
 series::

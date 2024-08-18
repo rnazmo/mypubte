@@ -8,7 +8,7 @@ updated: N/A
 checked: 2024-07-06T06:26
 title: "［Bash］Bashのバージョン番号が一定以上であることをチェックする"
 title_en: TODO
-tags: ["meta::mypubte::workflow::waiting-for-update", "bash", "bash_script"]
+tags: ["bash", "bash_script"]
 categories: ["bash"]
 ---
 

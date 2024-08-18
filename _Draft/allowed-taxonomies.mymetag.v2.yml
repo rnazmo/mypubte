@@ -1,0 +1,89 @@
+# WIP
+
+series::catchup
+series::troubleshoot
+series::check-info
+
+software::Git
+software::Cyber​​Chef
+software::nmap
+software::Kali
+software::Python
+software::pip
+software::venv
+software::Xfce
+software::Go
+software::Ruby
+software::Rails
+software::JavaScript
+software::Node.js
+software::React.js
+software::Next.js
+software::webpack
+software::CSS
+software::SCSS
+software::Tailwind CSS
+software::Bootstrap
+software::Bash
+software::AWK
+
+hardware::CPU
+hardware::PSU
+hardware::router
+
+technology::Ipv4
+technology::Ipv6
+technology::AI
+
+service::
+
+website::
+
+software-engineering::?
+
+computer-scrience::?
+
+organization::NVIDIA
+organization::IETF
+organization::Google
+organization::Apple
+
+writing
+security
+Diary
+mypubteing
+keyboard-shortcut
+
+---
+
+librariy-and-framework
+desktop-environment::Xfce
+window-manager::i3
+CLI::nmap
+
+networking devic
+computer
+internet
+algorithm
+testing
+CI/CD
+
+computer language::data exchange language::YAML
+YAML
+lang::en::英語に変換
+language::english::英語に変換
+language::english::単語の違い
+lang::ja::読み方
+language::japanese::読み方
+language::japanese::単語の違い
+topic::2024-03-xz-utils-backdoor(CVE-2024-3094)
+
+---
+
+# Idea
+
+FROM -> TO
+data-exchange-language -> computer-language
+data-exchange-language -> programming-language
+YAML -> data-exchange-language
+TOML -> data-exchange-language

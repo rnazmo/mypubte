@@ -51,47 +51,40 @@ meta::mypubte::workflow::waiting-for-update
 series::
   helloworld
   writeup
-OS::
-  Windows
-  macOS
-  Ubuntu
-  Android
-  GUI??:: (or desktop (computing))?
-    desktop-environment::
-      Xfce
-      MATE
-      GNOME
-      KDE
-    window manager::
-      i3
-hosting:: (or hosting-service?)
-  source-code-hosting::
-    GitHub
-    GitLab
-    Bitbucket
-    Gitea
-    SourceForge
-  web-hosting??
-programming-language::
-  Go
-  JavaScript
-  Python
-  cpp
-  csharp
-  TypeScript
-  awk (programming language)
-librariy-and-framework::
-  Rails
-  React (JavaScript)
-  Vue (JavaScript)
-  Gatsuby (JavaScript)
-  Next (JavaScript)
-  bootstrap
-  tailwindcss
-  Django
-  echo (golang)
-  gin (golang)
-  Hugo
+software::
+  OS::
+    Windows
+    macOS
+    Ubuntu
+    Android
+    GUI??:: (or desktop (computing))?
+      desktop-environment::
+        Xfce
+        MATE
+        GNOME
+        KDE
+      window manager::
+        i3
+  programming-language::
+    Go
+    JavaScript
+    Python
+    cpp
+    csharp
+    TypeScript
+    awk (programming language)
+  librariy-and-framework::
+    Rails
+    React (JavaScript)
+    Vue (JavaScript)
+    Gatsuby (JavaScript)
+    Next (JavaScript)
+    bootstrap
+    tailwindcss
+    Django
+    echo (golang)
+    gin (golang)
+    Hugo
 tool?::
   jq
   Chrome
@@ -129,6 +122,14 @@ computer language::
     CSS
   modeling language::?
     UML (Unified Modeling Language)
+hosting:: (or hosting-service?)
+  source-code-hosting::
+    GitHub
+    GitLab
+    Bitbucket
+    Gitea
+    SourceForge
+  web-hosting??
 
 CPU
 RAM

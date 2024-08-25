@@ -15,6 +15,7 @@ aliases: ["catchup］Catch up on Obsidian v1.6 - v1.6.7（2024-06-07 - 2024-07-1
 
 ## まとめ
 
+- 今回の範囲 (v1.6.2 - v1.6.7) において大きな変更があるのは `v1.6.2` だけ
 - TODO:
 
 ## 目的と方針
@@ -24,13 +25,19 @@ See: [catchup］catchup シリーズのテキストを書く目的・方針（v2
 - ここでは　`public` 版の更新情報だけ追う
     - [Obsidian アプリの public 版と catalyst 版について](TODO:記事を書いてリンクをここへ)
 
+## v1.6 (?) は v1.6.2 として扱う
+
+- リリースノートを見ていく前に注意点をメモしておく
+- ChangeLog のタイトル表記は `1.6` となっているが、ブログの URL を見る限りこれは正確には `1.6.2` ぽい
+    - Ref: `[Obsidian 1.6 Desktop (Public) - Obsidian](https://obsidian.md/changelog/2024-06-07-desktop-v1.6.2/)`
+    - GitHub の [Releases](https://github.com/obsidianmd/obsidian-releases/releases) を見ても `1.6` などというものはなく、[`1.6.2`](https://github.com/obsidianmd/obsidian-releases/commit/07a8ba29f771c7d266c05159a630ef3cf61bafad) しか確認できない
+- よってここでは `1.6` ではなく `1.6.2` として扱う
+
 ## v1.6.2 Desktop (2024-06-07)
 
 ### リリース情報の入手先
 
 - [Obsidian 1.6 Desktop (Public) - Obsidian](https://obsidian.md/changelog/2024-06-07-desktop-v1.6.2/)
-- ChangeLog のタイトル表記は `1.6` となっているが、URL などを見る限りこれは正確には `1.6.2` ぽい
-    - よってここでは `1.6.2` として扱う
 
 ### まとめ
 

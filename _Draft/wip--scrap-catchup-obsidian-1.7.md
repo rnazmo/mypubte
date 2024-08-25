@@ -8,30 +8,33 @@ last_updated_at:
 last_reviewed_at: TODO:
 categories: ["series::catchup", "tool::Obsidian"]
 tags:
-keywords:
+keywords: ["RTL言語", "LTR言語"]
 title: "catchup］Obsidian v1.6.2 - v1.6.7 のキャッチアップ（2024-06-07 - 2024-07-18"
 aliases: ["catchup］Catch up on Obsidian v1.6 - v1.6.7（2024-06-07 - 2024-07-18"]
 ---
 
 ## まとめ
 
-- 今回の範囲 (v1.6.2 - v1.6.7) において大きな変更があるのは `v1.6.2` だけ
-- TODO:
+- 今回の範囲 (v1.6.2 - v1.6.7) において大きな変更があるのはほぼ `v1.6.2` だけ。他は読み飛ばして良い
+- 主な変更点：
+    - RTL 言語のサポートが大幅強化されたが、私が使うのは英語と日本語なので関係無い
+    - 脚注まわりがかなり快適になった
+    - 使用中の Vault 名がプライマリサイドバーに常時表示されるようになり、vault の切り替えが容易になった
+    - その他、細かい仕様変更（改善）が非常にたくさんある
+    - `v1.6.5 Desktop (2024-06-25)` にてアプリのインストーラーがアップデートされたため、[Obsidian のダウンロードページ](https://obsidian.md/download) から Obsidian を再インストールすること
 
 ## 目的と方針
 
-See: [catchup］catchup シリーズのテキストを書く目的・方針（v2024-08](./72b2608e-8b0f-4ccd-a366-9093a8d48f2a.md)
-
-- ここでは　`public` 版の更新情報だけ追う
+- See: [catchup］catchup シリーズのテキストを書く目的・方針（v2024-08](./72b2608e-8b0f-4ccd-a366-9093a8d48f2a.md)
+- ここでは　`public` 版の更新情報だけ追う：
     - [Obsidian アプリの public 版と catalyst 版について](TODO:記事を書いてリンクをここへ)
-
-## v1.6 (?) は v1.6.2 として扱う
-
-- リリースノートを見ていく前に注意点をメモしておく
-- ChangeLog のタイトル表記は `1.6` となっているが、ブログの URL を見る限りこれは正確には `1.6.2` ぽい
-    - Ref: `[Obsidian 1.6 Desktop (Public) - Obsidian](https://obsidian.md/changelog/2024-06-07-desktop-v1.6.2/)`
-    - GitHub の [Releases](https://github.com/obsidianmd/obsidian-releases/releases) を見ても `1.6` などというものはなく、[`1.6.2`](https://github.com/obsidianmd/obsidian-releases/commit/07a8ba29f771c7d266c05159a630ef3cf61bafad) しか確認できない
-- よってここでは `1.6` ではなく `1.6.2` として扱う
+- v1.6 (?) は v1.6.2 として扱う：
+    - リリースノートを見ていく前に注意点をメモしておく
+    - ChangeLog のタイトル表記は `1.6` となっているが、ブログの URL を見る限りこれは正確には `1.6.2` ぽい
+        - Ref: `[Obsidian 1.6 Desktop (Public) - Obsidian](https://obsidian.md/changelog/2024-06-07-desktop-v1.6.2/)`
+        - GitHub の [Releases](https://github.com/obsidianmd/obsidian-releases/releases) を見ても `1.6` などというものはなく、[`1.6.2`](https://github.com/obsidianmd/obsidian-releases/commit/07a8ba29f771c7d266c05159a630ef3cf61bafad) しか確認できない
+    - よってここでは `1.6` ではなく `1.6.2` として扱う
+- TODO: 上記あたりを Refine する
 
 ## v1.6.2 Desktop (2024-06-07)
 
@@ -41,17 +44,61 @@ See: [catchup］catchup シリーズのテキストを書く目的・方針（v2
 
 ### まとめ
 
-- TODO:
-- Search:
-    - 
-- Reading mode:
-    - 読書モードでは、スペースを含む脚注参照は表示されなくなりました。
-    - リーディングモードでのインライン脚注のレンダリングを修正。
-- Developers:
-    - テーマやプラグインをRTLインターフェイスに対応させるための [ガイド](https://docs.obsidian.md/Plugins/User+interface/Right-to-left) が公開された
-- Themes:
-    - Windows のデフォルトの等幅フォントとして、Cascadia Code ではなく Cascadia Mono に切り替えました。
-    - 太字テキストは現在のテキストウェイトに基づいて計算されるようになったため、見出し内の太字は太字のまま表示されます。
+- RTL 言語のサポートが大幅強化：
+    - RTL 言語って何？
+        - right-to-left (RTL) languages, 右横書き言語
+        - 右から左方向、かつ上から下方向に書く文字体系のこと
+        - 例：アラビア語
+        - 日本語は RTL 言語？
+            - 違う。LTR 言語
+            - > "RTL" は「上から下、右から左 (TB-RLまたはTBRL)」言語のことも意味する場合がある。これは古代の中国語、日本語、韓国語などの言語だが、現代では一般的に「左から右」言語で書かれる。
+                - source: [右横書き言語 - Wikipedia](https://ja.wikipedia.org/wiki/%E5%8F%B3%E6%A8%AA%E6%9B%B8%E3%81%8D%E8%A8%80%E8%AA%9E)
+        - Ref: [右横書き言語 - Wikipedia](https://ja.wikipedia.org/wiki/%E5%8F%B3%E6%A8%AA%E6%9B%B8%E3%81%8D%E8%A8%80%E8%AA%9E)
+    - 上述の通り、日本語は RTL 言語ではないのでほぼ関係無い。よって RTL 言語関係は読み飛ばす
+- 脚注：
+    - `[^]` を使った脚注の参照にオートコンプリートを追加
+    - エディターでの脚注の解析とレンダリングが改善された
+    - インライン脚注のホバープレビューが可能になった
+    - 脚注 ID にカーソルを合わせると、対応する脚注のポップアップが表示されるようになった
+    - まとめると全体的にかなり書きやすく＆読みやすくなった。嬉しい
+- プロパティ：
+    - 「プロパティ」(properties, property) って何？
+        - v1.4.0 で追加された機能。いわば拡張 front matter. その詳細についてはここでは触れない
+        - これを書いている時点（2024-08-26）では私はプロパティ機能のことをよく知らない
+            - 調べてから別の場所 ("catchup Obsidian v1.4.0" とか？) に書くかも？
+    - プロパティをマージすると、グローバルプロパティリストに新しいプロパティ名が表示されるようになった
+        - グローバルプロパティリスト (global property list) がよくわからない
+    - リストの項目をダブルクリックで編集できるようになった
+    - 開いているファイルに無効なフロントマターがある場合、プロパティビューに編集ボタンが追加される
+- Obsidian Sync:
+    - 同期対象とかが色々と変わった
+    - 私は Obsidian Sync を使ってないので読み飛ばす
+- 検索：
+    - 引用符で囲まれた文字列を入力したときは、検索サジェストが表示されなくなった
+    - カーソルが検索候補の末尾にあるか、次の文字がスペースでない限り、検索サジェストが表示されなくなった
+    - 「クリア」("clear") ボタンをクリックしても、検索入力のフォーカスが外れなくなった
+- リーディングモード:
+    - スペースを含む脚注参照は表示されなくなった
+        - これよくわからない
+    - インライン脚注のレンダリングを修正
+- 開発者向け：
+    - テーマやプラグインを [RTL インターフェイスに対応させるためのガイド](https://docs.obsidian.md/Plugins/User+interface/Right-to-left) が公開された
+- テーマ：
+    - Windows のデフォルトの等幅フォントが Cascadia Code から Cascadia Mono になった
+    - テキストの太字は現在のテキストウェイトに基づいて計算されるようになったため、見出し内の太字は太字のまま表示されるようになった
+        - CSS の `font-weight` プロパティ（フォントの太さを指定するプロパティ）まわりの話っぽい
+- パフォーマンス：
+    - ワークスペース（workspace）の読み込みが高速化された
+    - 長い Markdown ファイルの解析が高速化された
+- その他：
+    - 現在使用中の Vault 名がプライマリサイドバー (左側に出てくる一番良く使うサイドバー) の下あたりに常時表示されるようになり、vault の切り替えが容易になった
+        - これ良い。便利
+    - 文字数と単語数が現在のテキスト選択に基づいて更新されるようになった
+        - 元がどういう仕様だったのか知らないけど、テキスト選択しても特にカウントしなかったっぽい？
+        - わりと便利そうな機能
+        - とはいえ、日本語まわりのカウントは不安かも
+    - 非常にたくさんのバグが修正された
+    - 非常にたくさんの細かい仕様変更（改善）があった
 
 ## v1.6.2 Mobile (2024-06-07)
 
@@ -98,7 +145,7 @@ See: [catchup］catchup シリーズのテキストを書く目的・方針（v2
 ### まとめ
 
 - 大きな変更はない
-- インストーラーが Electron v30.1.2 にアップデートされた。そのため、Obsidian アプリをアップグレードするときは、[Obsidian　のダウンロードページ](https://obsidian.md/download) から Obsidian を再インストールすること
+- インストーラーが Electron v30.1.2 にアップデートされた。そのためアップグレードするときは、[Obsidian のダウンロードページ](https://obsidian.md/download) からインストールし、Obsidian を再インストールすること
 - いくつかの細かなバグが修正された
 
 ## v1.6.5 Mobile (2024-06-25)
@@ -134,13 +181,13 @@ See: [catchup］catchup シリーズのテキストを書く目的・方針（v2
 
 ## 感想
 
-- 更新頻度高め
+- 疲れた
+- Obsidian を追うのちょっと疲れるかも
+    - まず更新頻度高めっぽい
+    - また細かい仕様・バグ修正がめちゃ多く、読むコストが大きい
+    - その割に注目すべき変更が少ない
 
 ## 関連リンク
 
 - [Obsidian Changelog - Obsidian](https://obsidian.md/changelog/)
-- TODO:
-
-## TODO
-
-- [ ] TODO:
+- [obsidianmd/obsidian-releases: Community plugins list, theme list, and releases of Obsidian.](https://github.com/obsidianmd/obsidian-releases)

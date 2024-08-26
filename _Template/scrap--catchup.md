@@ -55,7 +55,7 @@ See: [catchup］catchup シリーズのテキストを書く目的・方針（v2
 
 ## 脚注
 
-[^1]:foobarbaz
+[^1]: foobarbaz
 
 ## 参考
 

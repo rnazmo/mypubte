@@ -1,0 +1,43 @@
+---
+mymetag_version: v2.1.0
+id: 494cbeac-122f-4d6f-88b9-3a3fb88a521d
+type: Scrap
+drafted_at: 2024-08-27T03:52
+created_at: 2024-08-27T03:52
+last_updated_at:
+last_reviewed_at: TODO:
+categories: ["tool::Obsidian"]
+tags:
+keywords:
+title: "Obsidian アプリの種類について"
+aliases: ["Obsidian アプリの public 版と catalyst 版の違い"]
+---
+
+## まとめ
+
+- `public` 版：安定版。みんな使うやつ
+- `catalyst` 版：不安定なアーリーアクセス版。お金払った人のみ使えるやつ
+
+## Obsidian アプリの種類についての諸々
+
+- まず前提として、Obsidian はオープンソースではない[^1]
+- アプリの種類について：
+	- `Desktop` 版と `Mobile` 版がある
+	- そしてその各々に `public` 版と `catalyst` 版がある
+- `public` 版と `catalyst` 版の違い：
+    -  `public` 版：いわゆる stable 版。一般ユーザーはこちらを使う
+    - `catalyst` 版：いわゆる insider build  版。「[Catalyst Lycense](https://publish.obsidian.md/help-ja/%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E3%81%A8%E3%82%A2%E3%83%89%E3%82%AA%E3%83%B3%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/%E3%82%AB%E3%82%BF%E3%83%AA%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9)」という有料ライセンスを購入した人のみがアーリーアクセスできる
+- 私が今使っているのは `public` 版の両方 (`Desktop`, `Mobile`) のアプリである (2024-08 時点)
+    - よって私の書くテキストにおいては原則として `public` 版を前提とし、`catalyst` 版については触れない（はずである）
+
+## 脚注
+
+[^1]: [obsidian-releases/README.md at master · obsidianmd/obsidian-releases](https://github.com/obsidianmd/obsidian-releases/blob/bb53744043d53b22fb0fde5c3098dd2d1bd2ea8b/README.md?plain=1#L5)
+
+## 参考
+
+- [Early access versions - Obsidian Help](https://help.obsidian.md/Obsidian/Early+access+versions)
+
+## 関連リンク
+
+- [obsidianmd/obsidian-releases: Community plugins list, theme list, and releases of Obsidian.](https://github.com/obsidianmd/obsidian-releases)

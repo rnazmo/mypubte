@@ -47,9 +47,17 @@ See: [catchup］catchup シリーズのテキストを書く目的・方針（v2
 
 ### foo
 
-- foo
+- foo[^1]
 
 ## 感想
+
+- foo
+
+## 脚注
+
+[^1]:foobarbaz
+
+## 参考
 
 - foo
 

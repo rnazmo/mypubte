@@ -27,9 +27,15 @@ See: [helloworld］helloworld シリーズのテキストを書く目的・方�
 
 - TODO:
 
-### 1. Hello World する
+### 2. Hello World する
 
 - TODO:
+
+## 環境
+
+```console
+- TODO:
+```
 
 ## 感想
 

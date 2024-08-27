@@ -152,7 +152,8 @@ go version go1.22.0 linux/amd64
 
 - OS: Manjaro
 - shell: Zsh
-- oh-my-zsh などの Zsh フレームワークは使っていない
+- anyenv はインストールしていない
+- oh-my-zsh などの Zsh フレームワークはインストールしていない
 - package manager: pacman (, pamac)
 
 ```console
@@ -180,8 +181,23 @@ curl 8.8.0 (x86_64-pc-linux-gnu) libcurl/8.8.0 OpenSSL/3.3.1 zlib/1.3.1 brotli/1
 
 ## 感想
 
-- asdf 本体のインストールがややこしくて面倒
+- asdf 本体のダウンロード・インストール周りのこと：
+  - ややこしくて面倒
+  - macOS は homebrew で楽にインストールできそうでいいなあ
+  - oh-my-zsh などのの Zsh フレームワークを利用している場合は少しややこしくなりそうだった
+  - 今回は `git clone` 経由でダウンロードしたが、pacman 経由でも可能らしい。pacman に慣れてないので今回は git を使ったが、pacman の方が良いかも？
+  - asdf 本体のアップデートはどうやるんだろう
 - asdf 自体はかなり良さそう
+- 今回、次の要素については触れなかった。これらについてはいつか別記事にて触れる（はず）である
+  - グローバルではなくローカルで設定（有効化）するやつ
+  - Go 言語以外も試す。node.js とかかなり色々ある
+  - ユーザー用の設定ファイル `.asdfrc`
+  - プロジェクト用の設定ファイル `.tool-versions`
+  - ターミナルの保管も有効にできるらしい？
+  - 競合である mise (旧 rtx) を試す
+    - パット見だがほぼ上位互換？インストール周りも楽そうだしコマンドもスッキリしてそう
+    - 早々に mise に乗り換える予定である
+      - ならば、**上述の asdf の機能・仕様の深堀りはしなくていい（優先度が非常に低い）**のでは？
 
 ## 脚注
 
@@ -189,13 +205,13 @@ curl 8.8.0 (x86_64-pc-linux-gnu) libcurl/8.8.0 OpenSSL/3.3.1 zlib/1.3.1 brotli/1
 
 ## 参考
 
-- [asdf | asdf](https://asdf-vm.com/)
-- TODO:
+- [Getting Started | asdf](https://asdf-vm.com/guide/getting-started.html)
+- [はじめよう | asdf](https://asdf-vm.com/ja-jp/guide/getting-started.html)
+- [asdf-community/asdf-golang: Go plugin for the asdf version manager](https://github.com/asdf-community/asdf-golang)
+- [asdf で開発言語と利用ツールのバージョン管理 #asdf - Qiita](https://qiita.com/RuyPKG/items/d4ea8baab1e0a17ae927)
+- [まだ anyenv (**env) 使ってるの？ asdf を使おう！](https://zenn.dev/noraworld/articles/replace-anyenv-with-asdf)
 
 ## 関連リンク
 
 - [asdf-vm/asdf: Extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more](https://github.com/asdf-vm/asdf)
-
-## TODO
-
-- [ ] foo
+- [複数のランタイムバージョンをプロジェクト単位で管理できる asdf の紹介 #rbenv - Qiita](https://qiita.com/iisaka51/items/eeb3a7fdc2b4f70b2b4f)

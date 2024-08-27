@@ -14,3 +14,7 @@ aliases: ["helloworld］Purpose and policy for writing texts in the helloworld s
 ---
 
 TODO:
+
+- とにかく「Hello World するまでの最低限の手順」を原則とする
+    - 細かい機能の説明とか、そういうのはここでは投げ捨てる
+    - そのツールに対する最初の一歩

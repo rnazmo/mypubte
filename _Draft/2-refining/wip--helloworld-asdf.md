@@ -1,16 +1,16 @@
 ---
 mymetag_version: v2.1.0
-id: TODO:
+id: 2e138b3d-d904-4140-93aa-d4ddc8c8a540
 type: Scrap
-drafted_at: TODO:
-created_at: TODO:
+drafted_at: 2024-08-27T23:16
+created_at: 2024-08-27T23:16
 last_updated_at:
 last_reviewed_at: TODO:
-categories: ["series::helloworld", "Hoge"]
+categories: ["series::helloworld", "tool::asdf"]
 tags:
-keywords:
-title: "helloworld］Hoge に Hello World する（v2027-01"
-aliases: ["helloworld］Hello World! in Hoge（v2027-01"]
+keywords: ["version manager"]
+title: "helloworld］asdf に Hello World する（v2024-08"
+aliases: ["helloworld］Hello World in asdf（v2024-08"]
 ---
 
 ## まとめ

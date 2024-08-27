@@ -10,7 +10,7 @@ categories: ["series::helloworld", "Hoge"]
 tags:
 keywords:
 title: "helloworld］Hoge に Hello World する（v2027-01"
-aliases: ["helloworld］Hello World! in Hoge（v2027-01"]
+aliases: ["helloworld］Hello World in Hoge（v2027-01"]
 ---
 
 ## まとめ

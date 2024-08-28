@@ -21,6 +21,11 @@ aliases: ["helloworld］Hello World in Hoge（v2027-01"]
 
 See: [helloworld］helloworld シリーズのテキストを書く目的・方針（v2024-08](./a8edd76c-963b-4cd1-affc-fc8be160ca11.md)
 
+## 今回やること
+
+- foo をインストールする
+- それを使って Hello World!
+
 ## 手順
 
 ### 1. インストールする

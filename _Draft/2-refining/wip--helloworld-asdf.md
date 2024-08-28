@@ -19,6 +19,7 @@ aliases: ["helloworld］Hello World in asdf（v2024-08"]
     1. 依存である git と curl を適当に入れる
     2. asdf 本体を git clone する
     3. シェル (Zsh) にパスを追記する。おわり。
+- asdf 自体の感触は良さそう。しかし mise (旧 rtx) はより良さそうなので、採用するならそちらが有力
 
 ## 目的と方針
 
@@ -32,6 +33,8 @@ See: [helloworld］helloworld シリーズのテキストを書く目的・方�
 ## 今回やること
 
 - asdf をインストールする
+- インストールの確認のためのバージョンを表示する
+    - 当然ながら `Hello World` とは表示できないので、「インストールの確認（バージョンを表示）」をもって代わりとする
 - おまけ：それを使って特定のバージョンの Golang をインストールする
 
 ## 手順
@@ -69,7 +72,7 @@ Zsh に下記を追加する：
 
 PATHの変更が有効になるように、シェルを再起動する。ターミナルのタブを一旦閉じて開き直せばOK。（たぶん `source` するのでもいけるはず）
 
-### 2. Hello World する
+### 2. Hello World する（バージョンを表示する）
 
 Hello World とは表示できないので、代わりにバージョンを表示してみる：
 
@@ -88,7 +91,7 @@ version: v0.14.1-f00f759
 $ asdf plugin add golang https://github.com/asdf-community/asdf-golang.git
 ```
 
-### 2. Golang のバージョンをインストールする
+### 2. 特定のバージョンのGolang をインストールする
 
 まずはインストール可能なバージョンの一覧を確認：
 
@@ -153,7 +156,7 @@ go version go1.22.0 linux/amd64
 - OS: Manjaro
 - shell: Zsh
 - anyenv はインストールしていない
-- oh-my-zsh などの Zsh フレームワークはインストールしていない
+- oh-my-zsh, Starship などのシェル周りの フレームワークはインストールしていない
 - package manager: pacman (, pamac)
 
 ```console
@@ -198,10 +201,6 @@ curl 8.8.0 (x86_64-pc-linux-gnu) libcurl/8.8.0 OpenSSL/3.3.1 zlib/1.3.1 brotli/1
     - パット見だがほぼ上位互換？インストール周りも楽そうだしコマンドもスッキリしてそう
     - 早々に mise に乗り換える予定である
       - ならば、**上述の asdf の機能・仕様の深堀りはしなくていい（優先度が非常に低い）**のでは？
-
-## 脚注
-
-[^1]: foobarbaz
 
 ## 参考
 

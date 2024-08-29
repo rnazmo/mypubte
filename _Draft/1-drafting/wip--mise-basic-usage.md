@@ -22,7 +22,15 @@ aliases: ["basic-usage］Basic usage of mise（v2024-08"]
 
 See: [basic-usage］basic-usage シリーズのテキストを書く目的・方針（v2024-08](./63922cb4-c692-4126-9a87-1ffbbbbbffbe.md)
 
-## Foo
+## 基本的な使い方
+
+- TODO:
+
+### foo
+
+- TODO:
+
+### bar
 
 - TODO:
 

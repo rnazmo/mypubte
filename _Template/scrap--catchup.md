@@ -1,7 +1,8 @@
 ---
-mymetag_version: v2.1.0
+mymetag_version: v3.0.0
 id: TODO:
 type: Scrap
+status: ["visibility::public", "workflow::drafting"]
 drafted_at: TODO:
 created_at: TODO:
 last_updated_at:

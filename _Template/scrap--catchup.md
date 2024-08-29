@@ -20,7 +20,7 @@ aliases: ["catchup］Catch up on Hoge v2027.1 - v2027.2（2027-01 - 2027-07"]
 
 ## 目的と方針
 
-See: [catchup］catchup シリーズのテキストを書く目的・方針（v2024-08](./72b2608e-8b0f-4ccd-a366-9093a8d48f2a.md)
+- See: [catchup］catchup シリーズのテキストを書く目的・方針（v2024-08](./72b2608e-8b0f-4ccd-a366-9093a8d48f2a.md)
 
 ## v2024.100
 

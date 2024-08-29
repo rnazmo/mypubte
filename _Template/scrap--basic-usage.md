@@ -20,7 +20,7 @@ aliases: ["basic-usage］Basic usage of foo（v2037-08"]
 
 ## 目的と方針
 
-See: [basic-usage］basic-usage シリーズのテキストを書く目的・方針（v2024-08](./63922cb4-c692-4126-9a87-1ffbbbbbffbe.md)
+- See: [basic-usage］basic-usage シリーズのテキストを書く目的・方針（v2024-08](./63922cb4-c692-4126-9a87-1ffbbbbbffbe.md)
 
 ## Foo
 

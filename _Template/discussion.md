@@ -16,7 +16,7 @@ aliases:
 
 ## 目的と方針
 
-See: [Discussion のテキストを書く目的・方針（v2024-08](./TODO:.md)
+- See: [Discussion のテキストを書く目的・方針（v2024-08](./TODO:.md)
 
 ## 議題
 

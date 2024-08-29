@@ -16,7 +16,7 @@ aliases: ["Foo", "FOO", "foo bar baz", "フー"]
 
 ## 目的と方針
 
-See: [Glossary のテキストを書く目的・方針（v2024-08](./TODO:.md)
+- See: [Glossary のテキストを書く目的・方針（v2024-08](./TODO:.md)
 
 ## 解説
 

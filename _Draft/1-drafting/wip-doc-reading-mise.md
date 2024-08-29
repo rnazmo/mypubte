@@ -28,6 +28,10 @@ See: [doc-reading］doc-reading シリーズのテキストを書く目的・方
 - なにか一つでも得るものがあれば勝ちの精神で読む
 -->
 
+## 経緯・動機
+
+- TODO:
+
 ## 対象
 
 [Home | mise-en-place](https://mise.jdx.dev/)

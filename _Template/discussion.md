@@ -54,6 +54,10 @@ aliases:
 
 - [ ] foo
 
+## ChangeLog
+
+- 2027-08-05 Closed
+
 ## 議論
 
 ### 2024-08-29T18:02

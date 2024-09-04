@@ -21,3 +21,5 @@ aliases: ["basic-usage］Purpose and policy for writing texts in the basic-usage
 ## `basic-usage` シリーズを書く方針
 
 - TODO:
+
+basic-usage シリーズ、Manual と内容被ってない？どうする？

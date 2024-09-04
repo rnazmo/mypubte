@@ -10,8 +10,8 @@ last_reviewed_at: TODO:
 categories: ["series::basic-usage", "tool::mise"]
 tags:
 keywords:
-title: "basic-usage］mise の基本的な使い方（v2024-08"
-aliases: ["basic-usage］Basic usage of mise（v2024-08"]
+title: "basic-usage］mise の基本的な使い方を色々試してみる（v2024-09"
+aliases: ["basic-usage］basic usage of mise（v2024-09"]
 ---
 
 ## まとめ

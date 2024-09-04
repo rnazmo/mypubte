@@ -18,6 +18,10 @@ aliases: ["helloworld］Hello World in Hoge（v2027-01"]
 
 - foo
 
+## 注意事項
+
+- foo
+
 ## 経緯
 
 - TODO:

@@ -1,6 +1,6 @@
 ---
 mymetag_version: v3.0.0
-id: 4b428bb8-7eef-45db-8173-b9cb05d40338TODO:
+id: TODO:
 type: Scrap
 status: ["visibility::public", "workflow::drafting"]
 drafted_at: TODO:

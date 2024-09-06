@@ -1,7 +1,7 @@
 ---
 mymetag_version: v3.0.0
 id: aa68e6ea-4382-4462-9326-8c4274964e14
-type: Scrap
+type: Manual
 status: ["visibility::public", "workflow::drafting"]
 drafted_at: 2024-09-05T04:39
 created_at: 2024-09-05T07:49

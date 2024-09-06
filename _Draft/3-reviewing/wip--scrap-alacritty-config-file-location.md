@@ -2,7 +2,7 @@
 mymetag_version: v3.1.0
 id: 859b1c37-feb7-4442-8490-05febeb320d3
 type: Scrap
-status: ["visibility::public", "workflow::drafting"]
+status: ["visibility::public", "workflow::reviewing"]
 drafted_at: 2024-09-07T02:25
 created_at: 2024-09-07T02:25
 last_updated_at:

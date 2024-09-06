@@ -2,7 +2,7 @@
 mymetag_version: v3.1.0
 id: 2f0fcaef-7cbd-4f69-bd75-64b5aae2d560
 type: Scrap
-status: ["visibility::public", "workflow::drafting"]
+status: ["visibility::public", "workflow::reviewing"]
 drafted_at: 2024-09-07T04:10
 created_at: 2024-09-07T04:10
 last_updated_at:
@@ -37,7 +37,7 @@ aliases: ["yay：Installed（v2027-01"]
 ### 1. インストール
 
 ```sh
-$ sudo pacman -S yay
+$ pacman -S --needed git base-devel yay
 ```
 
 ### 2. バージョン確認
@@ -68,9 +68,17 @@ yay v12.3.5 - libalpm v14.0.0
 
 ## 参考
 
+- [yay/README.md at next #Installation · Jguer/yay](https://github.com/Jguer/yay/blob/675f0ba3f3d4bbc006a12c29e273df0f4f533edc/README.md#other-distributions)
 - [Arch: Manjaro で「pacman」と「yay」のコマンド操作〈H53〉 - Linux あれこれ](https://furuya7.hatenablog.com/entry/2020/05/06/180426)
 
 ## 関連リンク
 
 - [yay/README.md at next #Installation · Jguer/yay](https://github.com/Jguer/yay/blob/675f0ba3f3d4bbc006a12c29e273df0f4f533edc/README.md)
 - [yay package versions - Repology](https://repology.org/project/yay/versions)
+
+## ChangeLog
+
+- 2024-09-07
+    - インストールコマンドを変更
+        - `$ sudo pacman -S yay` -> `$ pacman -S --needed git base-devel yay`
+            - そうしないと、後々何かしらのパッケージをインストールする際に 「`fakeroot` パッケージが見つかりません」的なエラーが起こる

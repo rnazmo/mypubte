@@ -7,7 +7,7 @@ drafted_at: 2024-09-07T01:37
 created_at: 2024-09-07T01:37
 last_updated_at:
 last_reviewed_at: TODO:
-categories: ["series::installed", "Alacritty"]
+categories: ["series::installed", "tool::Alacritty"]
 tags:
 keywords: ["pacman"]
 title: "Alacritty：インストールした（v2024-09"
@@ -29,7 +29,7 @@ aliases: ["Hello：Installed（v2024-09"]
     - この方法だとサジェストとかが入らないのも辛い
         - > If you're just interested in the Alacritty binary and you don't need the terminfo file, desktop entry, manual page or shell completions, you can install it directly through cargo:
             - Source: [alacritty/INSTALL.md at master "Cargo Installation" · alacritty/alacritty](https://github.com/alacritty/alacritty/blob/b125b99dd3886a3517f8ecf91dc6cae1ca5378fb/INSTALL.md)
-- [snap 経由](https://snapcraft.io/alacritty)：
+- [Snap 経由](https://snapcraft.io/alacritty)：
     - トラブル起こしやすい印象だからナシ
         - 以前（2 年前くらい？）に snap でインストールしたとき、細かいトラブルがちょくちょくあって面倒だった
             - うろ覚えだが、OS のメニューに Alacritty が追加されないとかそういうの

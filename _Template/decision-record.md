@@ -1,5 +1,5 @@
 ---
-mymetag_version: v3.0.0
+mymetag_version: v3.1.0
 id: TODO:
 type: DecisionRecord
 status: ["visibility::public", "workflow::production", "closed"]

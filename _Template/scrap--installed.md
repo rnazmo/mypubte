@@ -18,10 +18,6 @@ aliases: ["Hello：Installed（v2027-01"]
 
 - foo
 
-## 注意事項
-
-- foo
-
 ## 経緯
 
 - TODO:
@@ -29,6 +25,10 @@ aliases: ["Hello：Installed（v2027-01"]
 ## やりたかったこと
 
 - TODO:
+
+## インストール方法の選定
+
+TODO:
 
 ## 手順（やったこと）
 

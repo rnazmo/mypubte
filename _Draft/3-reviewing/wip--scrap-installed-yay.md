@@ -82,3 +82,4 @@ yay v12.3.5 - libalpm v14.0.0
     - インストールコマンドを変更
         - `$ sudo pacman -S yay` -> `$ pacman -S --needed git base-devel yay`
             - そうしないと、後々何かしらのパッケージをインストールする際に 「`fakeroot` パッケージが見つかりません」的なエラーが起こる
+            - Ref: [troubleshoot］yay：エラー `ERROR: Cannot find the fakeroot binary.` が出てパッケージのインストールに失敗した](eebe837c-5090-4d63-b0a3-aeb3d58c5c76.md)

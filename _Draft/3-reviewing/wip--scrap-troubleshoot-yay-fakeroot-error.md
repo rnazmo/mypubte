@@ -135,3 +135,4 @@ yay v12.3.5 - libalpm v14.0.0
 
 - [yay/README.md at next #Installation · Jguer/yay](https://github.com/Jguer/yay/blob/675f0ba3f3d4bbc006a12c29e273df0f4f533edc/README.md#other-distributions)
 - [Pacmanの使い方 - Qiita](https://qiita.com/MoriokaReimen/items/dbe1448ce6c0f80a6ac1)
+- [WSL上のArchLinuxでyayを使う方法 #archLinux - Qiita](https://qiita.com/Hayao0819/items/1d647683bf458d10351a)

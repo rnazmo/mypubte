@@ -7,7 +7,7 @@ drafted_at: TODO:
 created_at: TODO:
 last_updated_at:
 last_reviewed_at: TODO:
-categories: ["Hoge"]
+categories: ["series::installed", "Hoge"]
 tags:
 keywords:
 title: "Hoge：インストールした（v2027-01"

@@ -7,11 +7,11 @@ drafted_at: TODO:
 created_at: TODO:
 last_updated_at:
 last_reviewed_at: TODO:
-categories: ["series::installed", "Hoge"]
+categories: ["series::installed", "tool::Hoge"]
 tags:
 keywords:
 title: "Hoge：インストールした（v2027-01"
-aliases: ["Hello：Installed（v2027-01"]
+aliases: ["Hoge：Installed（v2027-01"]
 ---
 
 ## まとめ

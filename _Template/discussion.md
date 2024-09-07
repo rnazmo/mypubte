@@ -10,7 +10,7 @@ last_reviewed_at: TODO:
 categories: ["mymetag"]
 tags:
 keywords:
-title: "2037-08］［mymetag］新機能 foo を実装すべきか"
+title: "2024-09］［mymetag］新機能 foo を実装すべきか"
 aliases:
 ---
 
@@ -34,7 +34,7 @@ aliases:
 
 ### 所感など
 
-- foo
+- TODO:
 
 ### 環境
 
@@ -44,11 +44,11 @@ aliases:
 
 ### 参考
 
-- foo
+- TODO:
 
 ### 関連リンク
 
-- foo
+- TODO:
 
 ### TODO
 

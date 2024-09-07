@@ -10,19 +10,19 @@ last_reviewed_at: TODO:
 categories: ["series::catchup", "Hoge"]
 tags:
 keywords:
-title: "catchup］Hoge v2027.100 - v2027.200 のキャッチアップ（2027-01 - 2027-07"
-aliases: ["catchup］Catch up on Hoge v2027.1 - v2027.2（2027-01 - 2027-07"]
+title: "catchup］Hoge：v12.34 - v17.89 のキャッチアップ（1987-01 - 2024-09"
+aliases: ["catchup］Hoge：Catch up on v12.34 - v17.89（1987-01 - 2024-09"]
 ---
 
 ## まとめ
 
-- foo
+- TODO:
 
 ## 目的と方針
 
 - See: [catchup］catchup シリーズのテキストを書く目的・方針（v2024-08](./72b2608e-8b0f-4ccd-a366-9093a8d48f2a.md)
 
-## v2024.100
+## v12.34
 
 ### リリース情報の入手先
 
@@ -30,13 +30,13 @@ aliases: ["catchup］Catch up on Hoge v2027.1 - v2027.2（2027-01 - 2027-07"]
 
 ### まとめ
 
-- foo
+- TODO:
 
 ### foo
 
-- foo
+- TODO:
 
-## v2027.200
+## v17.89
 
 ### リリース情報の入手先
 
@@ -44,7 +44,7 @@ aliases: ["catchup］Catch up on Hoge v2027.1 - v2027.2（2027-01 - 2027-07"]
 
 ### まとめ
 
-- foo
+- TODO:
 
 ### foo
 
@@ -52,7 +52,7 @@ aliases: ["catchup］Catch up on Hoge v2027.1 - v2027.2（2027-01 - 2027-07"]
 
 ## 感想
 
-- foo
+- TODO:
 
 ## 脚注
 
@@ -60,12 +60,12 @@ aliases: ["catchup］Catch up on Hoge v2027.1 - v2027.2（2027-01 - 2027-07"]
 
 ## 参考
 
-- foo
+- TODO:
 
 ## 関連リンク
 
-- foo
+- TODO:
 
 ## TODO
 
-- [ ] foo
+- [ ] TODO:

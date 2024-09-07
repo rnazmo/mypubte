@@ -10,13 +10,13 @@ last_reviewed_at: TODO:
 categories: ["series::setup", "tool::foo"]
 tags:
 keywords:
-title: "setup］foo：セットアップ手順（v2037-08"
-aliases: ["setup］foo：Setup manual（v2037-08"]
+title: "setup］foo：セットアップ手順（v2024-09"
+aliases: ["setup］foo：Setup manual（v2024-09"]
 ---
 
 ## まとめ
 
-- foo
+- TODO:
 
 ## 目的と方針
 
@@ -46,7 +46,7 @@ aliases: ["setup］foo：Setup manual（v2037-08"]
 
 ## 感想
 
-- foo
+- TODO:
 
 ## 脚注
 
@@ -54,11 +54,11 @@ aliases: ["setup］foo：Setup manual（v2037-08"]
 
 ## 参考
 
-- foo
+- TODO:
 
 ## 関連リンク
 
-- foo
+- TODO:
 
 ## TODO
 

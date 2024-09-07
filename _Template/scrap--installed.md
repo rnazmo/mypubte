@@ -10,13 +10,13 @@ last_reviewed_at: TODO:
 categories: ["series::installed", "tool::Hoge"]
 tags:
 keywords:
-title: "Hoge：インストールした（v2027-01"
-aliases: ["Hoge：Installed（v2027-01"]
+title: "installed］Hoge：インストールした（v2024-09"
+aliases: ["installed］Hoge：Installed（v2024-09"]
 ---
 
 ## まとめ
 
-- foo
+- TODO:
 
 ## 経緯
 
@@ -52,7 +52,7 @@ TODO:
 
 ## 感想
 
-- foo
+- TODO:
 
 ## 脚注
 
@@ -60,11 +60,11 @@ TODO:
 
 ## 参考
 
-- foo
+- TODO:
 
 ## 関連リンク
 
-- foo
+- TODO:
 
 ## TODO
 

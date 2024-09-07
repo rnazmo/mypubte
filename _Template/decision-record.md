@@ -10,7 +10,7 @@ last_reviewed_at: TODO:
 categories: ["mymetag"]
 tags:
 keywords:
-title: "2037-08］［mymetag］foo を bar した"
+title: "2024-09］［mymetag］foo を bar した"
 aliases:
 ---
 

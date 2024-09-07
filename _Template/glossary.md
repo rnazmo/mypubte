@@ -7,7 +7,7 @@ drafted_at: TODO:
 created_at: TODO:
 last_updated_at:
 last_reviewed_at: TODO:
-categories: ["foo"]
+categories: ["tool::foo"]
 tags:
 keywords:
 title: "foo"

@@ -8,7 +8,7 @@ created_at: 2024-09-07T02:25
 last_updated_at:
 last_reviewed_at: TODO:
 categories: ["series::installed", "Alacritty"]
-tags:
+tags: ["configuration"]
 keywords:
 title: "Alacritty：設定ファイルの場所（v2024-09"
 aliases: ["Alacritty：Location of configuration file（v2024-09"]

@@ -9,7 +9,7 @@ last_updated_at:
 last_reviewed_at: TODO:
 categories: ["tool::Git", "GitHub"]
 tags: ["branch (Git)"]
-keywords: ["rename"]
+keywords: ["rename", "GUI"]
 title: "Git：GitHub 上でリモートブランチをリネームした（v2024-09"
 aliases: ["Git：Renamed remote branch on GitHub（v2024-09"]
 ---
@@ -37,6 +37,7 @@ aliases: ["Git：Renamed remote branch on GitHub（v2024-09"]
 
 ## 感想
 
+- GUI でポチポチするだけでできる
 - GitHub 上でできて楽
 
 ## 参考

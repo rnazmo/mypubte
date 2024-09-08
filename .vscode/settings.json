@@ -1,4 +1,9 @@
 {
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "editor.autoIndent": "full",
   "editor.minimap.enabled": false,
-  "editor.detectIndentation": false
+  "editor.renderWhitespace": "all",
+  "files.insertFinalNewline": true,
 }

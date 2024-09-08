@@ -1,10 +1,10 @@
 {
-  "editor.insertSpaces": true,
-  "editor.detectIndentation": false,
-  "editor.tabSize": 4,
-  "editor.autoIndent": "full",
-  "editor.minimap.enabled": false,
-  "editor.renderWhitespace": "all",
-  "files.insertFinalNewline": true,
-  "workbench.editor.closeEmptyGroups": false,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+    "editor.autoIndent": "full",
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "files.insertFinalNewline": true,
+    "workbench.editor.closeEmptyGroups": false,
 }

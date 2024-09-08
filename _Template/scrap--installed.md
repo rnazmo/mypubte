@@ -18,6 +18,10 @@ aliases: ["installed］Hoge：Installed（on Manjaro Linux）（v2024-09"]
 
 - TODO:
 
+## 方針
+
+- See: TODO:
+
 ## 経緯
 
 - TODO:

@@ -20,7 +20,7 @@ aliases: ["catchup］Hoge：Catch up on v12.34 - v17.89（1987-01 - 2024-09"]
 
 ## 目的と方針
 
-- See: [catchup］catchup シリーズのテキストを書く目的・方針（v2024-08](./72b2608e-8b0f-4ccd-a366-9093a8d48f2a.md)
+- See: [purpose-and-policy］`catchup` シリーズの目的・方針（v2024-08](./72b2608e-8b0f-4ccd-a366-9093a8d48f2a.md)
 
 ## v12.34
 

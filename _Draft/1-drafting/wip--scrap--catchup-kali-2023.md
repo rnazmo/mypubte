@@ -19,7 +19,7 @@ aliases: ["catchup::kali］Catch up on v2023.1 - v2023.4（2023-01 - 2023-12]
 
 ## 目的と方針
 
-See: [catchup］catchup シリーズのテキストを書く目的・方針（v2024-08](./72b2608e-8b0f-4ccd-a366-9093a8d48f2a.md)
+See: [purpose-and-policy］`catchup` シリーズの目的・方針（v2024-08](./72b2608e-8b0f-4ccd-a366-9093a8d48f2a.md)
 
 ## v2023.1
 

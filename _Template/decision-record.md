@@ -14,9 +14,9 @@ title: "2024-09］［mymetag］foo を bar した"
 aliases:
 ---
 
-## 目的と方針
+## この記事の目的と方針
 
-- See: [DecisionRecord のテキストを書く目的・方針（v2024-08](./TODO:.md)
+- See: [purpose-and-policy］`DicisionRecord` タイプの目的・方針（v2024-09](./e68c2744-605a-476b-a893-707dbbcfcc30.md)
 
 ## 提案
 

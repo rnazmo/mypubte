@@ -7,11 +7,11 @@ drafted_at: 2024-09-08T20:50
 created_at: 2024-09-08T20:50
 last_updated_at:
 last_reviewed_at: TODO:
-categories: ["mypkb"]
+categories: ["mypkb", "series::purpose-and-policy"]
 tags:
 keywords:
-title: "`Glossary` タイプの目的・方針（v2024-09"
-aliases: ["Purpose and policy for `Glossary` type（v2024-09"]
+title: "purpose-and-policy］`Glossary` タイプの目的・方針（v2024-09"
+aliases: ["purpose-and-policy］Purpose and policy for `Glossary` type（v2024-09"]
 ---
 
 ## `Glossary` タイプとは何か

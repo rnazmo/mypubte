@@ -17,9 +17,9 @@ aliases: ["catchup］Hoge：Where to find release notes and ChangeLog（v2024-09
 ## まとめ
 
 - リリースノート：
-    - TODO:
+  - TODO:
 - ChangeLog：
-    - TODO:
+  - TODO:
 
 ## リリースノートの場所
 

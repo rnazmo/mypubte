@@ -18,9 +18,9 @@ aliases: ["setup］foo：Setup manual（v2024-09"]
 
 - TODO:
 
-## 目的と方針
+## この記事の目的と方針
 
-- See: [setup］setup シリーズを書く方針（v2024-09](./6be9f341-1f39-474b-b4c2-20db75d81723.md)
+- See: [purpose-and-policy］`setup` シリーズの目的・方針（v2024-09](./6be9f341-1f39-474b-b4c2-20db75d81723.md)
 
 ## 手順
 

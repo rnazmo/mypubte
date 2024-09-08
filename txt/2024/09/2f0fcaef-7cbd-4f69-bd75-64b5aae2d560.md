@@ -2,11 +2,11 @@
 mymetag_version: v3.1.0
 id: 2f0fcaef-7cbd-4f69-bd75-64b5aae2d560
 type: Scrap
-status: ["visibility::public", "workflow::reviewing"]
+status: ["visibility::public", "workflow::production"]
 drafted_at: 2024-09-07T04:10
 created_at: 2024-09-07T04:10
 last_updated_at:
-last_reviewed_at: TODO:
+last_reviewed_at: 2024-09-08T23:20
 categories: ["series::installed", "tool::yay"]
 tags:
 keywords:
@@ -30,7 +30,7 @@ aliases: ["installed］yay：Installed（on Manjaro Linux）（v2024-09"]
 ## インストール方法の選定
 
 - Manjaro Linux には yay の公式リポジトリがあるため、pacman コマンドを使って直接インストールできる
-  - 一方 Arch Linux には無いため、`git` 経由でインストールする必要があるぽい
+  - 一方 Arch Linux を使う場合には公式リポジトリが無いため、`git` 経由でインストールする必要があるぽい
 
 ## 手順（やったこと）
 
@@ -81,5 +81,5 @@ yay v12.3.5 - libalpm v14.0.0
 - 2024-09-07
   - インストールコマンドを変更
     - `$ sudo pacman -S yay` -> `$ pacman -S --needed git base-devel yay`
-      - そうしないと、後々何かしらのパッケージをインストールする際に 「`fakeroot` パッケージが見つかりません」的なエラーが起こる
+      - そうしないと後々にパッケージをインストールする際に 「`fakeroot` パッケージが見つかりません」的なエラーが起こる
       - Ref: [troubleshoot］yay：エラー `ERROR: Cannot find the fakeroot binary.` が出てパッケージのインストールに失敗した](eebe837c-5090-4d63-b0a3-aeb3d58c5c76.md)

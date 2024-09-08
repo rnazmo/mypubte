@@ -7,11 +7,11 @@ drafted_at: TODO:
 created_at: TODO:
 last_updated_at:
 last_reviewed_at: TODO:
-categories: ["mypkb"]
+categories: ["mypkb", "series::purpose-and-policy"]
 tags:
 keywords:
-title: "`Foo` タイプの目的・方針（v2024-09"
-aliases: ["Purpose and policy for `Foo` type（v2024-09"]
+title: "purpose-and-policy］`Foo` タイプの目的・方針（v2024-09"
+aliases: ["purpose-and-policy］Purpose and policy for `Foo` type（v2024-09"]
 ---
 
 ## `Foo` タイプとは何か

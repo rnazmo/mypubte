@@ -7,14 +7,18 @@ drafted_at: TODO:
 created_at: TODO:
 last_updated_at:
 last_reviewed_at: TODO:
-categories: ["mypkb", "series::foo"]
+categories: ["mypkb", "series::purpose-and-policy"]
 tags:
 keywords:
-title: "`foo` シリーズの目的・方針（v2024-09"
-aliases: ["Purpose and policy for `foo` series（v2024-09"]
+title: "purpose-and-policy］`foo` シリーズの目的・方針（v2024-09"
+aliases: ["purpose-and-policy］Purpose and policy for `foo` series（v2024-09"]
 ---
 
 ## `foo` シリーズとは何か
+
+- TODO:
+
+## `foo` シリーズの所属する `type`
 
 - TODO:
 

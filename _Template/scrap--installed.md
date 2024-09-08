@@ -18,6 +18,10 @@ aliases: ["installed］Hoge：Installed（on Manjaro Linux）（v2024-09"]
 
 - TODO:
 
+## この記事の目的・方針
+
+- See: [purpose-and-policy］`installed` シリーズの目的・方針（v2024-09](ed0f0a63-51e1-43b0-8cd6-3bb77de060fb.md)
+
 ## 経緯
 
 - TODO:

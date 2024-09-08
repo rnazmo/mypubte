@@ -18,6 +18,10 @@ aliases: ["installed］Starship：Installed（on Manjaro Linux）（v2024-09"]
 
 - foo
 
+## 方針
+
+- See: TODO:
+
 ## 経緯
 
 - TODO:

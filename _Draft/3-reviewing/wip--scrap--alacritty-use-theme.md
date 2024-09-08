@@ -114,8 +114,7 @@ import = [
 
 zenburn はこんな色：
 
-<!-- ![zenburn](../../txt/2024/09/media/82177c4c-cf65-454b-b59b-40dd8df0eee2.png) -->
-![zenburn](../media/82177c4c-cf65-454b-b59b-40dd8df0eee2.png)
+![zenburn](./media/82177c4c-cf65-454b-b59b-40dd8df0eee2.png)
 
 以下を自分の設定ファイルに追記すれば良い：
 

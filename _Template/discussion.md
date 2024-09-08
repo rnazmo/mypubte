@@ -14,7 +14,7 @@ title: "2024-09］［mymetag］新機能 foo を実装すべきか"
 aliases:
 ---
 
-## 目的と方針
+## この記事の目的と方針
 
 - See: [purpose-and-policy］`Discussion` タイプの目的・方針（v2024-09](ab5688e9-81ef-4e3e-902f-205f5b1900d3.md)
 

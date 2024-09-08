@@ -1,7 +1,7 @@
 ---
 mymetag_version: v3.0.0
 id: a0ed0fc2-0b0c-4d01-aff0-a6da03b5e54d
-type: Scrap
+type: Note?
 status: ["visibility::public", "workflow::drafting"]
 drafted_at: 2024-08-29T18:32
 created_at: TODO:

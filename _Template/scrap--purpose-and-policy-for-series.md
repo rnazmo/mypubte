@@ -18,6 +18,10 @@ aliases: ["Purpose and policy for `foo` series（v2024-09"]
 
 - TODO:
 
+## `foo` シリーズの所属 `type`
+
+- TODO:
+
 ## `foo` シリーズのテキストを書く目的
 
 - TODO:

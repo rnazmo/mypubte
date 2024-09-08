@@ -10,8 +10,8 @@ last_reviewed_at: TODO:
 categories: ["series::installed", "tool::Hoge"]
 tags:
 keywords:
-title: "installed］Hoge：インストールした（v2024-09"
-aliases: ["installed］Hoge：Installed（v2024-09"]
+title: "installed］Hoge：インストールした（Manjaro Linux にて）（v2024-09"
+aliases: ["installed］Hoge：Installed（on Manjaro Linux）（v2024-09"]
 ---
 
 ## まとめ

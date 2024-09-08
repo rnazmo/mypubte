@@ -10,8 +10,8 @@ last_reviewed_at: TODO:
 categories: ["series::installed", "font::Cica"]
 tags:
 keywords: ["tool::yay"]
-title: "Cica：インストールした（v2024-09"
-aliases: ["Cica：Installed（v2024-09"]
+title: "installed］Cica：インストールした（Manjaro Linux にて）（v2024-09"
+aliases: ["installed］Cica：Installed（on Manjaro Linux）（v2024-09"]
 ---
 
 ## まとめ
@@ -29,9 +29,9 @@ aliases: ["Cica：Installed（v2024-09"]
 ## インストール方法の選定
 
 - 手動インストール：
-    - 面倒そう
+  - 面倒そう
 - AUR 経由：
-    - 楽そうなのでこちらでいく
+  - 楽そうなのでこちらでいく
 
 ## 手順（やったこと）
 

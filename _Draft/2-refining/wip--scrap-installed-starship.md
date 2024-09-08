@@ -10,8 +10,8 @@ last_reviewed_at: TODO:
 categories: ["series::installed", "tool::Starship"]
 tags:
 keywords: ["terminal", "prompt"]
-title: "Starship：インストールした（v2024-09"
-aliases: ["Starship：Installed（v2024-09"]
+title: "installed］Starship：インストールした（Manjaro Linux にて）（v2024-09"
+aliases: ["installed］Starship：Installed（on Manjaro Linux）（v2024-09"]
 ---
 
 ## まとめ
@@ -30,7 +30,7 @@ aliases: ["Starship：Installed（v2024-09"]
 
 - バイナリ or pacman or mise or ...
 - mise でやる？
-    - そんなに厳密なバージョン管理は必要ないだろう。最新版だけで十分。バージョン切り替える予定ない
+  - そんなに厳密なバージョン管理は必要ないだろう。最新版だけで十分。バージョン切り替える予定ない
 - なら pacman でいいか
 
 ## 手順（やったこと）
@@ -96,11 +96,10 @@ build_env:rustc 1.80.0 (051478957 2024-07-21) (Arch Linux rust 1:1.80.0-1),
 ## 感想
 
 - Starship をインストールするまでがめちゃ大変だった
-    - Nerd Font のインストールが大変だった
-    - *yak shaving*
+  - Nerd Font のインストールが大変だった
+  - *yak shaving*
 - 少し触った感触はかなり良い
 - カスタマイズ項目多すぎて大変そう
-- 
 
 ## 参考
 

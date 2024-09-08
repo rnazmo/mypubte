@@ -7,11 +7,11 @@ drafted_at: 2024-09-07T04:46
 created_at: 2024-09-07T04:46
 last_updated_at:
 last_reviewed_at: TODO:
-categories: ["series::installed", "tool::yay"]
+categories: ["tool::yay"]
 tags:
 keywords:
 title: "yay：パッケージの検索と確認の方法（v2024-09"
-aliases: ["yay：Installed（v2024-09"]
+aliases: ["yay：How to search and check package（v2024-09"]
 ---
 
 ## まとめ
@@ -19,12 +19,12 @@ aliases: ["yay：Installed（v2024-09"]
 - 検索：`$ yay -Ss パッケージ名`
 - 確認：`$ yay -Si パッケージ名`
 
-
 ## パッケージの検索
 
 ```sh
 $ yay -Ss パッケージ名
 ```
+
 ### 例
 
 ```sh

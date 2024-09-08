@@ -7,7 +7,7 @@ drafted_at: 2024-09-07T02:25
 created_at: 2024-09-07T02:25
 last_updated_at:
 last_reviewed_at: TODO:
-categories: ["series::installed", "Alacritty"]
+categories: ["Alacritty"]
 tags: ["configuration"]
 keywords:
 title: "Alacritty：設定ファイルの場所（v2024-09"
@@ -26,11 +26,11 @@ aliases: ["Alacritty：Location of configuration file（v2024-09"]
     3. `$HOME/.config/alacritty/alacritty.toml`
     4. `$HOME/.alacritty.toml`
 - Windows：
-    - `%APPDATA%alacrittyalacritty.toml`
+  - `%APPDATA%alacrittyalacritty.toml`
 - 注意点：
-    - Alacritty はインストール時には設定ファイルを作成しない
-    - v0.13.0 にて設定ファイルが YAML ではなく TOML に変更された [^1]
-        - バージョン 0.12 以前の設定ファイルは `alacritty.yml`
+  - Alacritty はインストール時には設定ファイルを作成しない
+  - v0.13.0 にて設定ファイルが YAML ではなく TOML に変更された [^1]
+    - バージョン 0.12 以前の設定ファイルは `alacritty.yml`
 
 ## 環境
 

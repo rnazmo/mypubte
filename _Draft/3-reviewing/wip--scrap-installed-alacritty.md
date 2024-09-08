@@ -10,8 +10,8 @@ last_reviewed_at: TODO:
 categories: ["series::installed", "tool::Alacritty"]
 tags:
 keywords: ["pacman"]
-title: "Alacritty：インストールした（v2024-09"
-aliases: ["Hello：Installed（v2024-09"]
+title: "installed］Alacritty：インストールした（Manjaro Linux にて）（v2024-09"
+aliases: ["installed］Alacritty：Installed（on Manjaro Linux）（v2024-09"]
 ---
 
 ## まとめ

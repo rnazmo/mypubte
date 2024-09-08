@@ -6,4 +6,5 @@
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "all",
   "files.insertFinalNewline": true,
+  "workbench.editor.closeEmptyGroups": false,
 }

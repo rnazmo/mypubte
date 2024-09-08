@@ -36,11 +36,12 @@ bold_italic.style = "Bold Italic"
 - <- Nerds Fonts を設定したターミナルが必要
 - Cica (Nerds Fonts 含んでる) と Alacritty でやってみよう (今ココ)
 
-## 前提
-
-- Cica をインストール済みである
 
 ## 作業（やったこと）
+
+### 前提
+
+- Cica を OS にインストール済みである
 
 ### Cica の状態を確認した
 

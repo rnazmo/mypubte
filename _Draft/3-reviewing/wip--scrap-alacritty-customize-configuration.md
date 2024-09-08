@@ -9,7 +9,7 @@ last_updated_at:
 last_reviewed_at: TODO:
 categories: ["series::customize-config", "tool::Alacritty"]
 tags: ["configuration"]
-keywords: ["config file", "alacritty.toml"]
+keywords: ["configuration file", "alacritty.toml"]
 title: "customize-config］Alacritty：設定を色々弄った（v2024-09"
 aliases: ["customize-config］Alacritty：Tweaked configuration（v2024-09"]
 ---

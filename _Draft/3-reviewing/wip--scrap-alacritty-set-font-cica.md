@@ -75,7 +75,7 @@ $ fc-list | grep -i cica
 
 ### フォントを Cica に指定する設定を書いた
 
-- できた設定は次の通り。これを `alacritty.toml` に書けばOK：
+- できた設定の記述は次の通り。これを `alacritty.toml` に書けばOK：
 
 ```toml
 [font]
@@ -148,4 +148,5 @@ Out-of-date                   : No
 ## 関連リンク
 
 - [Alacritty,TOML：設定ファイル (`alacritty.toml`) の TOML の書き方どうするか問題](./7ed73067-19bc-4c6e-b218-2147736859a8.md)
+- [Alacritty：デフォルトの設定ファイル（サンプルファイル）は無くなった](23b8da9a-66c9-47a7-a355-aae3630fa382.md)
 - [Alacritty - ArchWiki](https://wiki.archlinux.jp/index.php/Alacritty)

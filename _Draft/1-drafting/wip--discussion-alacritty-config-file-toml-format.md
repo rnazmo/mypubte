@@ -1,6 +1,6 @@
 2024-09-07T08:17
 7ed73067-19bc-4c6e-b218-2147736859a8
-Alacritty の設定ファイル (`alacritty.toml`) の TOML の書き方どうするか問題
+"Alacritty,TOML：設定ファイル (`alacritty.toml`) の TOML の書き方どうするか問題"
 
 ---
 

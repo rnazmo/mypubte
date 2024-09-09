@@ -16,7 +16,10 @@ aliases: ["installed］Hoge：Installed（on Manjaro Linux）（v2024-09"]
 
 ## まとめ
 
-- TODO:
+- 手順：
+    - 1. TODO:
+    - 2. TODO:
+    - 3. TODO:〜する。おわり
 
 ## この記事の目的・方針
 
@@ -24,15 +27,33 @@ aliases: ["installed］Hoge：Installed（on Manjaro Linux）（v2024-09"]
 
 ## 経緯
 
+- 〜〜〜らしいので、試したい
 - TODO:
 
 ## やりたかったこと
 
+- Hoge をインストールする
+- インストールの確認のためのバージョンを表示する
 - TODO:
 
 ## インストール方法の選定
 
-TODO:
+- Ref:
+    - TODO:
+    - TODO:
+
+### 候補
+
+- **foo**：
+    - TODO:
+- **bar**：
+    - TODO:
+- **baz**：
+    - TODO:
+
+### 検討
+
+- TODO:
 
 ## 手順（やったこと）
 
@@ -42,15 +63,31 @@ TODO:
 
 ### 1. インストール
 
+#### 1-1. ダウンロードする
+
+```sh
 - TODO:
+```
+
+#### 1-2. パスを通す
+
+```sh
+- TODO:
+```
 
 ### 2. バージョン確認
 
+動作確認。
+
+```sh
 - TODO:
+```
+
+おわり。
 
 ## 環境
 
-```console
+```sh
 - TODO:
 ```
 

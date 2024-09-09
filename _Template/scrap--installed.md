@@ -8,10 +8,10 @@ created_at: TODO:
 last_updated_at:
 last_reviewed_at: TODO:
 categories: ["series::installed", "tool::Hoge"]
-tags:
+tags: ["tool::fuga"]
 keywords:
-title: "installed］Hoge：インストールした（Manjaro Linux にて）（v2024-09"
-aliases: ["installed］Hoge：Installed（on Manjaro Linux）（v2024-09"]
+title: "installed］Hoge：インストールした（fuga 経由）（Manjaro Linux にて）（v2024-09"
+aliases: ["installed］Hoge：Installed（via fuga）（on Manjaro Linux）（v2024-09"]
 ---
 
 ## まとめ
@@ -19,7 +19,7 @@ aliases: ["installed］Hoge：Installed（on Manjaro Linux）（v2024-09"]
 - 手順：
     - 1. TODO:
     - 2. TODO:
-    - 3. TODO:〜する。おわり
+    - 3. TODO:
 
 ## この記事の目的・方針
 
@@ -33,7 +33,7 @@ aliases: ["installed］Hoge：Installed（on Manjaro Linux）（v2024-09"]
 ## やりたかったこと
 
 - Hoge をインストールする
-- インストールの確認のためのバージョンを表示する
+- その後、インストールされたことを確認するためにバージョンを表示する
 - TODO:
 
 ## インストール方法の選定
@@ -109,4 +109,4 @@ aliases: ["installed］Hoge：Installed（on Manjaro Linux）（v2024-09"]
 
 ## TODO
 
-- [ ] foo
+- [ ] TODO:

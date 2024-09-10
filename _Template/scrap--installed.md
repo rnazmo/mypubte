@@ -61,6 +61,13 @@ aliases: ["installed］Hoge：Installed（via fuga）（on Manjaro Linux）（v2
 
 - TODO:
 
+#### この時点でインストールされてないことを確認した
+
+```sh
+$ foo
+- TODO:
+```
+
 ### 1. インストールした
 
 #### 1-1. ダウンロードした
@@ -80,7 +87,11 @@ aliases: ["installed］Hoge：Installed（via fuga）（on Manjaro Linux）（v2
 動作確認。
 
 ```sh
-- TODO:
+$ foo --version
+TODO:
+
+$ where foo
+TODO:
 ```
 
 おわり。
@@ -88,7 +99,11 @@ aliases: ["installed］Hoge：Installed（via fuga）（on Manjaro Linux）（v2
 ## 環境
 
 ```sh
-- TODO:
+$ proper7y
+TODO:
+
+$ foo --version
+TODO:
 ```
 
 ## 感想

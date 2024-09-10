@@ -36,6 +36,10 @@ aliases: ["installed］Hoge：Installed（via fuga）（on Manjaro Linux）（v2
 - その後、インストールされたことを確認するためにバージョンを表示する
 - TODO:
 
+## 注意事項
+
+- TODO:
+
 ## インストール方法の選定
 
 - Ref:

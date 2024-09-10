@@ -1,0 +1,126 @@
+---
+mymetag_version: v3.1.0
+id: 6d532da1-63be-48d2-b2ba-751e5ff4a04c
+type: Scrap
+status: ["visibility::public", "workflow::drafting"]
+drafted_at: 2024-09-11T01:20
+created_at: 2024-09-11T01:20
+last_updated_at:
+last_reviewed_at: TODO:
+categories: ["series::customize-config", "tool::fzf", "tool::ghq"]
+tags: ["configuration", "tool::Zsh"]
+keywords: [".zshrc"]
+title: "customize-config］fzf：ghq との連携を設定した（Zsh にて）（v2024-09"
+aliases: ["customize-config］fzf：Configured integration with ghq（in Zsh）（v2024-09"]
+---
+
+## まとめ
+
+- `~/.zshrc` に、下記の設定を追記する
+
+## 経緯
+
+- 開発環境をを全面再構築中
+- -> peco が開発停止状態だと知った
+- -> peco ＋ ghq から fzf ＋ ghq に乗り換えよう
+- -> ghq, fzf のインストールが終わった
+- -> ghq と fzf との連携を設定しよう (今ココ)
+
+## やったこと・手順
+
+### 前提
+
+- ghq がインストール済み
+- fzf がインストール済み
+
+### 1. `~/.zshrc` に設定を追記した
+
+次の通り：
+
+```sh
+# What is this:
+#     Search Git repositories incrementally with preview
+#
+# Dependencies:
+#     fzf, ghq
+#
+# Keybinding:
+#     `Ctrl-g`
+#
+# Ref:
+#     [ghq で管理しているリポジトリに Ctrl-g で cd する on zsh - sheepla/ghq-fzf.zsh]
+#         (https://gist.github.com/sheepla/d680f1480d8c36c4290d6aabebf1abc6)
+
+function _fzf_cd_ghq() {
+    FZF_DEFAULT_OPTS="${FZF_DEFAULT_OPTS} --reverse --height=50%"
+    local -r root="$(ghq root)"
+    local -r repo="$(ghq list | fzf --preview="ls -AF --color=always ${root}/{1}")"
+    # local -r repo="$(ghq list | fzf --tmux 70% --preview="ls -AF --color=always ${root}/{1}")"
+    local -r dir="${root}/${repo}"
+    if [ -z "${dir}" ]; then
+        echo "no directories found"
+        return 1
+    fi
+    cd "${dir}"
+    zle accept-line
+    zle reset-prompt
+}
+
+zle -N _fzf_cd_ghq
+bindkey "^g" _fzf_cd_ghq
+```
+
+コメントにもある通り、このコードは [こちらのコード](https://gist.github.com/sheepla/d680f1480d8c36c4290d6aabebf1abc6) を参考にした。
+
+## 環境
+
+```console
+$ proper7y
+proper7y v0.4.2 - A tiny Bash script to get OS and other
+software version info. https://github.com/rnazmo/proper7y
+============================================================
+OS NAME      : Manjaro Linux
+OS VERSION   : 24.0.3
+Current Shell: Zsh
+Bash VERSION : 5.2.26(1)-release (x86_64-pc-linux-gnu)
+Zsh VERSION  : 5.9 (x86_64-pc-linux-gnu)
+CPU ARCH     : x86_64
+============================================================
+
+$ ghq --version
+ghq version 1.6.2 (rev:d79add2)
+
+$ fzf --version
+0.54.3 (af4917db)
+```
+
+## 感想
+
+- ghq も fzf もとても良い感じ
+
+## 参考
+
+- ghq と fzf の連携：
+    - [ghq で管理しているリポジトリに Ctrl-g で cd する on zsh](https://gist.github.com/sheepla/d680f1480d8c36c4290d6aabebf1abc6)
+        - via: [年初でアップデートした開発環境の話 - Don't Repeat Yourself](https://blog-dry.com/entry/2024/01/16/144341)
+    - [ghq-handbook/ja/05-command-list.md at master · Songmu/ghq-handbook](https://github.com/Songmu/ghq-handbook/blob/97d02519598835f635260988cfa45e58ec4afe35/ja/05-command-list.md)
+    - [ghq + peco！じゃなくて fzf連携 - 継続的ブログ](https://blog.fakiyer.com/entry/2016/01/29/142620)
+    - [6歳娘｢パパ、プロジェクトフォルダを見つけるのに何時間かけるの？｣【ghq+fzf+zsh】 #Git - Qiita](https://qiita.com/tomoyamachi/items/e51d2906a5bb24cf1684#ghq-fzf%E3%82%92%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B%E3%82%8B)
+- ghq:
+    - [ghq-handbook/ja/02-basic-usage.md at master · Songmu/ghq-handbook](https://github.com/Songmu/ghq-handbook/blob/97d02519598835f635260988cfa45e58ec4afe35/ja/02-basic-usage.md)
+- fzf の `--preview` オプション
+    - [fzfのpreview関連のオプション調べてみた](https://zenn.dev/eetann/articles/2022-08-27-fzf-preview#%7B%E6%95%B0%E5%AD%97%7D)
+
+## 関連リンク
+
+- [Home · junegunn/fzf Wiki · GitHub](https://web.archive.org/web/20220114103259/https://github.com/junegunn/fzf/wiki)
+- ghq と fzf の連携：
+    - [あいまい検索 fzfのすゝめ #fzf+ghqでリポジトリ移動を行う](https://zenn.dev/nowa0402/articles/5eb780280f2523#fzf%2Bghq%E3%81%A7%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E7%A7%BB%E5%8B%95%E3%82%92%E8%A1%8C%E3%81%86)
+- fzf と色々なものとの連携：
+    - [おい、peco もいいけど fzf 使えよ - Qiita](https://web.archive.org/web/20220109193019/https://qiita.com/b4b4r07/items/9e1bbffb1be70b6ce033)
+    - [Examples · junegunn/fzf Wiki](https://github.com/junegunn/fzf/wiki/Examples)
+
+## TODO
+
+- [ ] ghq 以外にも、色々なものと fzf を連携させると良さそう
+    - 導入は 1 つずつにして、キーバインドとかワークフローを十分馴染んだら次を導入、としないと使い熟せなくなりそう

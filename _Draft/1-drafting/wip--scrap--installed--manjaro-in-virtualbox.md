@@ -7,11 +7,11 @@ drafted_at: TODO:
 created_at: TODO:
 last_updated_at:
 last_reviewed_at: TODO:
-categories: ["series::installed", "tool::Hoge"]
+categories: ["series::installed", "tool::Manjaro"]
 tags: ["tool::fuga"]
 keywords:
-title: "installed］Hoge：インストールした（fuga 経由）（Manjaro にて）（v2024-09"
-aliases: ["installed］Hoge：Installed（via fuga）（on Manjaro）（v2024-09"]
+title: "installed］Manjaro：インストールした（fuga 経由）（Manjaro Linux にて）（v2024-09"
+aliases: ["installed］Manjaro：Installed（via fuga）（on Manjaro Linux）（v2024-09"]
 ---
 
 ## まとめ
@@ -32,7 +32,7 @@ aliases: ["installed］Hoge：Installed（via fuga）（on Manjaro）（v2024-09
 
 ## やりたかったこと
 
-- Hoge をインストールする
+- Manjaro をインストールする
 - その後、インストールされたことを確認するためにバージョンを表示する
 - TODO:
 

@@ -343,6 +343,7 @@ sudo pacman -S noto-fonts-cjk
 - base-devel のインストール
     - `sudo pacman -S base-devel`
 - dotfiles の適用
+- 再度スナップショットを作成
 - など
 
 ## 環境

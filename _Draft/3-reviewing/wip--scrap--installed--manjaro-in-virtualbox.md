@@ -2,9 +2,9 @@
 mymetag_version: v3.1.0
 id: 7404b72d-2f50-47eb-aa8f-1bf8b31aec81
 type: Scrap
-status: ["visibility::public", "workflow::drafting"]
+status: ["visibility::public", "workflow::reviewing"]
 drafted_at: 2024-09-16T11:27
-created_at: TODO:
+created_at: 2024-09-16T21:01
 last_updated_at:
 last_reviewed_at: TODO:
 categories: ["series::installed", "tool::Manjaro"]
@@ -16,10 +16,7 @@ aliases: ["installed］Manjaro：Installed Manjaro 24.0（Xfce Edition）in Virt
 
 ## まとめ
 
-- 手順：
-    1. TODO:
-    2. TODO:
-    3. TODO:
+- やる (やった) ことが多すぎてまとめられない。手順の項を読むこと
 
 ## この記事の目的・方針
 
@@ -43,10 +40,6 @@ aliases: ["installed］Manjaro：Installed Manjaro 24.0（Xfce Edition）in Virt
 - その後、無事動作することを確認する
 
 ## 手順（やったこと）
-
-### 前提
-
-- TODO:
 
 ### 1. Manjaro の ISO をダウンロードした
 

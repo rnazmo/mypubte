@@ -25,3 +25,7 @@ aliases: ["purpose-and-policy］Purpose and policy for `Foo` type（v2024-09"]
 ## `Foo` タイプのテキストを書く方針
 
 - TODO:
+
+## ChangeLog
+
+- 2027-08-05 TODO:

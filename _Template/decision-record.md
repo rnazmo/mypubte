@@ -41,6 +41,10 @@ aliases:
 - foo を bar した
     - (または foo は bar する)
 
+## ChangeLog
+
+- 2027-08-05 TODO:
+
 ### TODO
 
 - [ ] foo

@@ -60,6 +60,10 @@ aliases: ["setup］foo：Setup manual（v2024-09"]
 
 - TODO:
 
+## ChangeLog
+
+- 2027-08-05 TODO:
+
 ## TODO
 
 - [ ] foo

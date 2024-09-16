@@ -45,6 +45,10 @@ aliases: ["catchup］Hoge：Where to find release notes and ChangeLog（v2024-09
 
 - TODO:
 
+## ChangeLog
+
+- 2027-08-05 TODO:
+
 ## TODO
 
 - [ ] TODO:

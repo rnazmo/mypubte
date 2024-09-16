@@ -66,6 +66,10 @@ aliases: ["catchup］Hoge：Catch up on v12.34 - v17.89（1987-01 - 2024-09"]
 
 - TODO:
 
+## ChangeLog
+
+- 2027-08-05 TODO:
+
 ## TODO
 
 - [ ] TODO:

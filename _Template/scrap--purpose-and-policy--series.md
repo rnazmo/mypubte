@@ -29,3 +29,7 @@ aliases: ["purpose-and-policy］Purpose and policy for `foo` series（v2024-09"]
 ## `foo` シリーズのテキストを書く方針
 
 - TODO:
+
+## ChangeLog
+
+- 2027-08-05 TODO:

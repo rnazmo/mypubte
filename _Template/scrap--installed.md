@@ -17,9 +17,9 @@ aliases: ["installed］Hoge：Installed（via fuga）（on Manjaro）（v2024-09
 ## まとめ
 
 - 手順：
-    - 1. TODO:
-    - 2. TODO:
-    - 3. TODO:
+    1. TODO:
+    2. TODO:
+    3. TODO:
 
 ## この記事の目的・方針
 

@@ -11,12 +11,16 @@ categories: ["series::installed", "tool::Manjaro"]
 tags: ["tool::VirtualBox", "desktop_environment::Xfce"]
 keywords:
 title: "installed］Manjaro：VirtualBox 7.0 に Manjaro 24.0（Xfce 版）をインストールした（v2024-09"
-aliases: ["installed］Manjaro：Installed Manjaro 24.0（Xfce Edition）in VirtualBox 7.0（v2024-09"]
+aliases: ["installed］Manjaro：Installed Manjaro 24.0（Xfce edition）in VirtualBox 7.0（v2024-09"]
 ---
 
 ## まとめ
 
-- やる (やった) ことが多すぎてまとめられない。手順の項を読むこと
+- 手順：
+    1. Manjaro の ISO をダウンロード
+    2. 仮想マシンを作成
+    3. インストール作業
+- やったことが多くまとめられないので、詳細は各手順の項を読むこと
 
 ## この記事の目的・方針
 
@@ -59,6 +63,7 @@ aliases: ["installed］Manjaro：Installed Manjaro 24.0（Xfce Edition）in Virt
     - `名前`：`soba - Manjaro 24.0 (Xfce Edition)`
         - これたぶん**ローカルで一意な名前にしないとダメ**なやつ
         - そば食べたい
+        - これ、Edition は edition の方が良かったな。なんか気持ち悪い
     - `フォルダー`：`~/VirtualBox VMs`
         - これがデフォルト値だったかどうか覚えてない。自分で設定した独自のディレクトリかも
     - `ISO イメージ`：`<先程ダウンロードしたISOファイルのパス>`
@@ -86,7 +91,7 @@ aliases: ["installed］Manjaro：Installed Manjaro 24.0（Xfce Edition）in Virt
 - ここまでで仮想マシンが作成された
     - VirtualBox のトップページ (？) の仮想マシン一覧に、先ほど作成したマシンが追加されているはずである
 
-#### 2. 仮想マシンへの追加設定
+#### 2. 仮想マシンの設定の調節
 
 - 仮想マシンに追加の設定を行う
     - 先程の仮想マシン作成時には弄れなかった設定を弄る
@@ -226,125 +231,9 @@ CPU ARCH     : x86_64
 - なんか Guest Additions のインストールは不要みたいな話もあるっぽいがよくわからん
 - とりあえず、Guest Additions のインストールは不要そうなので、何もしなかった
 
-### 6. ミラーサーバーの変更をした
+## この後やったことは別記事にて
 
-```sh
-sudo pacman-mirrors --fasttrack
-```
-
-少し時間がかかる (3-4 分くらい)
-
-### 7. システム（パッケージ）の更新
-
-```sh
-sudo pacman -Syy
-```
-
-### 8. 日本語入力の設定をした
-
-1. fcitx-mozc のインストール
-    1. スタートメニューから `Manjaro Hello` アプリを再度起動する
-    2. 真ん中の下あたりにある `Applications` を選択する
-    3. `Extended language support` > `Manjaro Asian Input Support Fcitx` にチェックを入れ、右上の `UPDATE SYSTEM` を選択する
-    4. `Choose optional depdendencies for manjaro-asian-input-support-fcitx` というウィンドウが出てくるので、`fcitx-mozc: 日本語 | Japanese` にチェックを入れ、次へ
-    5. 確認画面が出てくるので、`Apply` を選択して次へ進む
-    6. 少し待つ
-    7. おわり
-2. 言語パッケージ (？) の追加インストール
-    1. スタートメニューから `Manjaro Setting Manager` アプリを起動する
-    2. `Language Packages` を選択する
-    3. 右上の `Install Packages` を選択する
-3. マシンを再起動する
-4. 英語・日本語の入力切り替えにショートカットを割り当てる (注：私の今のキーボードには**半角・全角キーが無い**)：
-    1. スタートメニューから、`Fcitx Configuration` アプリを起動する
-    2. 最初の画面 (＝ `Input Method` タブ) の左下の `+` を選択する
-    3. `Add input method` ウィンドウが開くので、**`Only Show Current Languages` のチェックを外し**、`Mozc` を探して選択する
-        - Input Method の順序は特に弄らないで良い (`Keyboard-English (US)` => `Mozc`)
-    4. Optional：`Global Config` タブを開き、`Trigger Input Mehtod` の `Ctrl+Space` を `Alt+\`` (など) に**上書き**する
-        - NOTE: **`Ctrl+Space` は VS Code の「サジェストのトグル」みたいなショートカットキーと被って**て、後々困るので変更した
-            - 今までは `Ctrl+Space` でやっていたが、丁度良い機会ということで変えた
-            - 私の今のキーマップ的に Alt は誤動作しやすく、かなり使いづらいけどどうしようこれ…
-5. スタートメニューから、**メモ帳アプリ `Mousepad`** を起動して、日本語入力ができることを試す
-    - ここまででで、日本語入力ができるようになっているはずである
-    - 切り替えのショートカットキーは、先程変更した通り**`Alt+\``** である
-6. おわり
-
-- 日本語入力周りの設定、全然よくわからん。
-- TODO: fcitx から fcitx5 に乗り換えた方が良さそう
-
-### 09. 日本語フォントをインストールした
-
-```sh
-sudo pacman -S noto-fonts-cjk
-```
-
-- システムのフォントを (日本語対応フォントに) 変更する必要ある？
-    - システムの言語を英語で使ってるから、無い
-    - システムの言語を日本語で使いたいなら、必要かも
-- だが、それはそれとして noto-fonts-cjk はインストールしておいた
-
-### 10. 時刻同期とタイムゾーンの設定をした
-
-1. スタートメニューから `Manjaro Setting Manager` アプリを起動する
-2. `Time and Date` を選択する
-3. `Set time and date automatically` にチェックが入っていることを確認する
-4. `Time zone` が `Asia/Tokyo` であることを確認する
-5. おわり
-
-### 11. ロケールの設定を確認した（がよくわからないのでスルーした）
-
-もうだいぶ疲れてきて、かなり適当になっている。
-
-1. スタートメニューから `Manjaro Setting Manager` アプリを起動する
-2. `Locale Settings` を選択する
-3. よくわからないが、何となく大丈夫そうなことを確認する
-4. おわり
-
-### 12. ファイアウォールの設定をした
-
-1. スタートメニューから、ファイアウォールアプリ `Gufw` 起動する
-2. `Status` を on にトグルする
-3. おわり
-
-注：細かい設定についてはここでは触れない
-
-### 13. デスクトップ下段のパネルを上段に移動した
-
-- パネル ＝ Windows で言うタスクバー
-
-1. パネル上で右クリックし、`Panel Preferences` を選択し、`Panel Preferences` ウィンドウを出す
-2. `Lock panel` のチェックを外す
-3. パネルの左右の端をマウスで掴んで上端まで移動させる
-4. `Lock panel` のチェックを付け直す
-5. おわり
-
-### 14. Thunar で隠しファイルを表示するように設定した
-
-1. スタートメニューから、ファイルマネージャーアプリ `Thunar` 起動する
-2. 上部のメニューの `View` を選択する
-3. `Show Hiden Files` にチェックを入れる
-4. おわり
-
-### 15. 仮想マシンのスナップショットを作成した
-
-1. 一度、仮想マシンをオフにする
-2. メニューから `スナップショット` > `作成` を選択する
-3. 名前と説明を適当に入力して、作成する
-
-以上で大体おわり。
-
-### 16. この後やるべきことのメモ
-
-- git の初期設定
-    - global config
-    - GitHub への SSH 接続設定
-- yay のインストール
-    - `sudo pacman -S yay`
-- base-devel のインストール
-    - `sudo pacman -S base-devel`
-- dotfiles の適用
-- 再度スナップショットを作成
-- など
+-> [foo]() に続く。
 
 ## 環境
 
@@ -388,9 +277,7 @@ $ vboxmanage --version
 
 ## 感想
 
-- 疲れて途中で集中切れた
 - この記事書くの面倒だったが、これで次からは (これを見ながら作業すれば良いので) 楽になる。はず
-- **出来上がった仮想マシンはかなり良い感じ**
 - i3wm も試したいから仮想マシン作って触ってみたい
 - Endeavour OS も同上
 - 余談だけど、クリックっぽい動作は全部「選択する」に統一した (表記揺れ対策)
@@ -411,30 +298,15 @@ $ vboxmanage --version
     - [Download x86 – Manjaro](https://manjaro.org/products/download/x86)
 - VirtualBox の仮想マシンの作成：
     - [First Steps #Adding-Virtual-Machines](https://www.virtualbox.org/manual/topics/Introduction.html#add_vm)
-- 設定弄る系：
+- VirtualBox の仮想マシンの設定弄る系：
     - [VirtualBox速度チューニングや仮想化関連のGUI設定手引き | DEVLABO](https://dev-labo.com/wordpress/virtualization-tuning-settings/)
     - [VirtualBox 最大パフォーマンスでUbuntu環境を構築する - ほりべあぶろぐ](https://holybea.com/2015/07/08/virtualbox-ubuntu/)
     - [First Steps](https://www.virtualbox.org/manual/topics/Introduction.html#create-vm-wizard-unattended-install)
     - [Configuring Virtual Machines](https://www.virtualbox.org/manual/topics/BasicConcepts.html#BasicConcepts)
-- 「インストール直後にすること」全体：
-    - [Manjaro Linux 最初の一歩 #インストール後に最初にしておくとよいこと。 - Qiita](https://qiita.com/phoepsilonix/items/b287aacf2de0ee89681b#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E5%BE%8C%E3%81%AB%E6%9C%80%E5%88%9D%E3%81%AB%E3%81%97%E3%81%A6%E3%81%8A%E3%81%8F%E3%81%A8%E3%82%88%E3%81%84%E3%81%93%E3%81%A8)
-    - [Manjaro Linuxでしあわせ環境を構築する](https://zenn.dev/calloc134/articles/0a9eae7c8df0d3#%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
-    - [Manjaro Linux (Xfce Desktop) インストール手順 – ロハスな生き方に憧れて！　温泉、Open Source、･･･](https://fanofdido.blog/manjaro-linux-xfce-desktop/)
-    - [（備忘録）Manjaro Linux 初期設定手順 - Qiita](https://qiita.com/zono_0/items/dc09a77ca70a6d52d3a8)
-    - [Manjaro Linux (Gnome Desktop) インストール手順 – ロハスな生き方に憧れて！　温泉、Open Source、･･･](https://fanofdido.blog/manjaro-linux-gnome-install/)
-    - [manjaro linux インストール後にする事 - Qiita](https://qiita.com/kxkx5150/items/16b2d5ee6cdea916ef44)
-    - [Manjaro Linux Xfceインストール後の基本設定 | プログラミングって大変だ](https://kotetsu1701.com/note/basic-settings-after-installing-manjarolinux-xfce/)
-    - [Manjaro インストール直後にやること12選 - In my mind](https://in-my-mind.hatenablog.jp/entry/12things-to-do-after-installing-manjaro-2020-04-18)
-- ミラーサーバーの変更：
-    - [Manjaro Linux のアップデートが遅いのでミラーサーバーを変更した - turtlechanのブログ](https://turtlechan.hatenablog.com/entry/2019/08/25/194849)
-    - [ミラー - ArchWiki](https://wiki.archlinux.jp/index.php/%E3%83%9F%E3%83%A9%E3%83%BC)
-- 日本語入力の設定：
-    - [朗報！ついに Manjaro Linux で 日本語入力を簡単に導入 できるようになった！！](https://gae-fan.blogspot.com/2020/06/manjaro-linux.html)
 
 ## 関連リンク
 
 - [Oracle VirtualBox: User Guide for Release 7.1](https://www.virtualbox.org/manual/)
-- [朗報！ついに Manjaro Linux で 日本語入力を簡単に導入 できるようになった！！](https://gae-fan.blogspot.com/2020/06/manjaro-linux.html)
 - [インストールガイド - ArchWiki](https://wiki.archlinux.jp/index.php/%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%82%AC%E3%82%A4%E3%83%89)
 - [VirtualBox/Arch Linux をゲストにする - ArchWiki](https://wiki.archlinux.jp/index.php/VirtualBox/Arch_Linux_%E3%82%92%E3%82%B2%E3%82%B9%E3%83%88%E3%81%AB%E3%81%99%E3%82%8B)
 
@@ -447,13 +319,5 @@ $ vboxmanage --version
         - [VirtualBoxのネットワーク設定を絵で説明する #Network - Qiita](https://qiita.com/feifo/items/0fde474005589afcff68)
         - 書籍「ハッキング・ラボのつくりかた」
 - [ ] Guest Additions が不要だった (既に自動でインストールされていた？) のはなぜ？
-- [ ] 日本語入力は fcitx から fcitx5 に乗り換えた方が良さそう
-    - これは別記事 (Scrap) かな
-    - Ref:
-        - [Arch Linuxの日本語入力をfcitxからfcitx5に切り替える | クロの思考ノート](https://note.kurodigi.com/archlinux-fcitx5/)
-        - [Fcitx - ArchWiki](https://wiki.archlinux.jp/index.php/Fcitx)
-        - [Fcitx5 - ArchWiki](https://wiki.archlinux.jp/index.php/Fcitx5)
-- [ ] SSD Trim?
-    - via: [Manjaro Linux (Xfce Desktop) インストール手順 – ロハスな生き方に憧れて！　温泉、Open Source、･･･](https://fanofdido.blog/manjaro-linux-xfce-desktop/#ssd-trim)
 - [ ] 「インストール作業のチェックリスト」とか作っても良さそう？
     - Ref: [Running a Linux Manjaro VM in Virtualbox](https://i12bretro.github.io/tutorials/0142.html)

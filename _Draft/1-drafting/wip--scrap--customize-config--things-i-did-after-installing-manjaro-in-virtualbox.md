@@ -194,27 +194,23 @@ sudo pacman -S --needed git curl vim base-devel yay
 ### 14. myenv-v3 を適用した
 
 ```sh
-# TODO:
 $ /bin/bash -c "$(curl -fsSL https://gitlab.com/rnazmo/myenv-v3/-/raw/main/init.bash)"
 
-$ cd ~/.myenv-v3
+$ cd ~/.myenv-v3 && ./setup.bash "soba"
 
-$ ./setup.bash soba
+# Then reboot your machine
 ```
 
-### XX. この後やるべきことのメモ
+- myenv-v3 = dotfiles 含むプロビジョニング用スクリプト
+
+### 15. この後やるべきことのメモ
 
 ここまでで大体の設定がおわり。
 
-- dotfiles の適用
-    - gie clone
-    - make apply
-    - list:
-        - VS Code
-        - etc...
-- スクリーンセーバーの設定を弄る
-- 再度スナップショットを作成
-- など
+- 今回やっていないが、やり残したこと：
+    - スクリーンセーバーの設定を弄る
+    - 再度スナップショットを作成
+    - など
 
 ## 環境
 

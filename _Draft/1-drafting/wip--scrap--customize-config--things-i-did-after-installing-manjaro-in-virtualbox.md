@@ -198,7 +198,7 @@ $ /bin/bash -c "$(curl -fsSL https://gitlab.com/rnazmo/myenv-v3/-/raw/main/init.
 
 $ cd ~/.myenv-v3 && ./setup.bash "soba"
 
-# Then reboot your machine
+# Then re-login or reboot your machine
 ```
 
 - myenv-v3 = dotfiles 含むプロビジョニング用スクリプト

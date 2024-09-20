@@ -1,0 +1,708 @@
+# Allowed taxonomy list (仮)
+#
+# What is this?:
+#     WIP.
+#     Ideas for mymetag's experimental feature.
+#
+# 目的：
+#     検索性の向上
+#
+# 方針：
+#     **aliases, implications, groups の追加・編集は慎重に**やる
+#         むやみやたらと増やさない (大事)
+#         目的を見失わない。**タクソノミーの目的は、検索性を上げること**
+#         「それを増やすことによって発生するメンテナンスコスト」<「それを増やすことによって向上した検索性によって削減できたコスト」ですか？
+#         「細かく (正確に) 分類すること」にこだわらないこと。それをやるのはここじゃない
+#         メンテナは私一人でリソースは有限なことを忘れない
+#
+# 用語の説明：
+#     taxonomy：category と tag の総称
+#         TODO: group もでは？
+#
+# 各項目の説明：
+#     name：
+#         `[tags."javascript"]` の `"javascript"` の部分のこと
+#     aliases：
+#         TODO:
+#     implecations
+#         そのタクソノミーの親となるタクソノミーを表す
+#         そして、インプリケーションに書いたタグは、自動で追加される。例えば「es2015」タグが「javascript」
+# 　　　　　インプリケーションを持つならば、「es2015」タグを持つ記事には自動的に「javascript」タグが追加される
+#          "es2015" -> "javascript"
+#     groups
+#         「タクソノミーに対するタクソノミー」のようなもの
+#
+# 各項目の例：
+#     name：
+#         [tags."javascript"]
+#     aliases：
+#         [tags."html"]
+#         aliases = ["HTML", "Hypertext Markup Language"]
+#     implecations
+#         [tags."es2015"]
+#         implications = ["javascript"]
+#     groups
+#         `["JavaScript"]`
+#
+# 各項目の規則：
+#     共通：
+#         name：
+#              一意であること。重複するタクソノミー名があってはいけない
+#             `"` で括ること (MUST)
+#              使って良い文字は「`a`-`z`, `0`-`9`, `()_`」の 39(= 26+10+3) 文字である (MUST)
+#              簡潔ことが望ましい (目安は 25 文字以下) (SHOULD)
+#         aliases：
+#              大文字アルファベットや日本語を許可する
+#                  TODO: 許可してよいのか？
+#              大文字アルファベットを使って良いのは固有名詞や略称のみ (EXPERIMENTAL)
+#                 O："terminal emulator"
+#                 X："Terminal emulator"
+#                 O："HTML"
+#         implecations
+#             TODO:
+#         groups
+#             グループ名は必ず複数形とすること (MUST)
+#                 O："programming_languages"
+#                 X："programming_language"
+#             同名のタクソノミー名がないこと (MUST)
+#             グループを書くときは、なるべく「大きい」グループ→「小さい」グループの順で並べること (MAY)
+#              allowed-groups に含まれるものしか使ってはいけない (MUST)
+#     allowed_categories：
+#         TODO:
+#     allowed_tags：
+#         TODO:
+#     allowed_groups：
+#         aliases, implications, groups の値を持ってはいけない (MUST)
+#
+# TODO:
+#     N/A
+#
+# Ideas：
+#     しばらく (運用が固まるまで) aliases 項目は無視するのはどうか
+#         aliases は、データ構造・運用を考える上で本質的でない上に、後からの変更 (追加) が用意
+#         逆に implications と groups は 重要
+#         -> 採用。しばらく aliases は無視する (2024-09-20)
+#
+# Ideas:
+#
+# ------------------------------------------------------
+#
+# mymetag_version = ???
+#
+# "template" (aliases = ["TEMPLATE", "テンプレート"], implications = ["foo"], groups = ["bar**s**"])
+#
+# [tags."foo"]
+# aliases = ["Foo"]
+# implications = []
+# groups = ["hoge", "huga"]
+# meta.id = 29ffc1f6-e85b-4cfd-ab7e-312d6670e3f8
+# meta.last_reviewed_at = 2024-09-20T09:03
+# meta.description = "iro wa nioedo chirinuru o"
+# meta.glossary_link = "[foo - Glossary - mypubte](fa26ead5-6840-4569-8c67-2760effb85f9.md)"
+#
+# ------------------------------------------------------
+#
+# mymetag_version: X.X.X
+#
+# import:
+#   - /path/to/foo/.mymetag.yaml
+#   - /path/to/bar/.mymetag.yaml
+#
+# ------------------------------------------------------
+
+allowed_taxonomies:
+  categories:
+    # - name: series::catchup
+    - name: series::caughtup # caught_up ?
+    # - name: series::helloworld
+    - name: series::hello_worlded?
+    - name: series::installed
+    - name: series::customized_config
+    # - name: building-vocab
+    - name: series::built_vocab
+    # - name: series::writeup
+    - name: series::wroteup # wrote_up ?
+    # series::showdev (`Show off what you've built!`)
+
+  tags:
+  # groups: ["operation_systems"]
+    - name: "operation_system"
+      groups: ["operation_systems"]
+    - name: "manjaro"
+      groups: ["operation_systems"]
+    - name: "endeavouros"
+    - name: "archlinux"
+    - name: "kali_linux"
+    - name: "ubuntu"
+    - name: "debian"
+    - name: "centos"
+    - name: "rocky_os"
+    - name: "rocky_os"
+    - name: "chrome_os"
+    - name: "android_(os)"
+    - name: "macos"
+    - name: "ios"
+    - name: "windows10"
+    - name: "windows11"
+
+  # groups = ["shells_(computing)"]
+    - name: "bash"
+      groups = ["shells_(computing)"]
+    - name: "zsh"
+    - name: "powershell"
+    - name: "shell_script"
+    - name: "shell_(computing)"
+    - name: "starship_(prompt)"
+
+  # groups = ["programming_languages"]
+    - name: "programming_language"
+      groups = ["programming_languages"]
+    - name: "golang_(programming_language)"
+      groups = ["programming_languages"]
+    - name: "python_(programming_language)"
+    - name: "ruby_(programming_language)"
+    - name: "rust_(programming_language)"
+    - name: "php_(programming_language)"
+    - name: "java_(programming_language)"
+    - name: "kotlin_(programming_language)"
+    - name: "c_(programming_language)"
+    - name: "perl_(programming_language)"
+    - name: "cpp_(programming_language)"
+    - name: "csharp_(programming_language)"
+    - name: "javascript"
+      groups = ["programming_languages", "javascript_related_technologies"]
+    - name: "typescript"
+      groups = ["programming_languages", "javascript_related_technologies"]
+
+  # groups = ["markup_languages"]
+    - name: "html"
+      groups = ["markup_languages"]
+    - name: "markdown"
+    - name: "latex"
+
+  # groups = ["style_sheet_languages"]
+    - name: "css" # cascading_style_sheets
+      groups = ["style_sheet_languages"]
+
+  # groups = ["data_exchange_languages"] # データ記述言語
+    - name: json
+      groups = ["data_exchange_languages"]
+    - name: yaml
+    - name: toml
+
+  # groups = ["javascript_related_technologies"]
+    - name: nodejs
+      groups = ["javascript_related_technologies", "javascript_runtimes"]
+    - name: deno_(javascript)
+      groups = ["javascript_related_technologies", "javascript_runtimes"]
+    - name: bun_(javascript)
+      groups = ["javascript_related_technologies", "javascript_runtimes"]
+    - name: babel
+      groups = ["javascript_related_technologies", "transpilers"]
+    - name: esbuild
+      groups = ["javascript_related_technologies", "transpilers", "module_bundlers"]
+    - name: webpack
+      groups = ["javascript_related_technologies", "module_bundlers"]
+    - name: turbopack
+      groups = ["javascript_related_technologies", "module_bundlers"]
+    - name: vite_(javascript)
+      groups = ["javascript_related_technologies", "module_bundlers"]
+    - name: eslint
+      groups = ["javascript_related_technologies", "static_code_analyzer"]
+    - name: prettier
+      groups = ["javascript_related_technologies", "static_code_analyzer"]
+    - name: biome
+      groups = ["javascript_related_technologies", "static_code_analyzer"]
+    - name: expressjs
+      groups = ["javascript_related_technologies", "web-app-frameworks"]
+    - name: hono_(javascript)
+      groups = ["javascript_related_technologies", "web-app-frameworks"]
+    - name: vuejs
+    - name: reactjs
+      groups = ["javascript_related_technologies", "reactjs_related_technologies"]
+    - name: gatsbyjs
+      groups = ["javascript_related_technologies", "reactjs_related_technologies", "static_site_generators"]
+    - name: nextjs
+      groups = ["javascript_related_technologies", "reactjs_related_technologies"]
+
+  # groups = ["golang_related_technologies"]
+    - name: gin_(golang)
+      groups = ["golang_related_technologies", "web-app-frameworks"]
+    - name: hugo_(golang)
+      groups = ["golang_related_technologies", "static_site_generators"]
+
+  # groups = ["ruby_related_technologies"]
+    - name: rails_(ruby)
+      groups = ["ruby_related_technologies", "web-app-frameworks"]
+
+  # groups = ["python_related_technologies"]
+    - name: venv_(python)
+      groups = ["python_related_technologies"]
+    - name: django_(python)
+      groups = ["python_related_technologies", "web-app-frameworks"]
+    - name: flask_(python)
+      groups = ["python_related_technologies", "web-app-frameworks"]
+
+  # groups = ["css_related_technologies"]
+    - name: bootstrap_(css)
+      groups = ["css_related_technologies"]
+    - name: tailwind_css
+
+  # groups = ["version_managers"]
+    - name: "mise_(version_manager)"
+    - name: "asdf"
+    - name:  "aqua_(version_manager)"
+    - name: "nvm_(version_manager)"
+      groups = ["version_managers"]
+    - name: "pyenv"
+
+  # groups = ["terminal_emulators"]
+    - name: "terminal_emulator"
+      groups = ["terminal_emulators"]
+    - name: "alacritty"
+      groups = ["terminal_emulators"]
+
+  # groups = ["cli_utilities"]
+    - name: cli # CLI
+      groups = ["cli_utilities"]
+    - name: make_(software)
+    - name: awk
+      groups = ["programming_languages", "cli_utilities"]
+    - name: sed
+      groups = ["cli_utilities"]
+    - name: cat_(command)
+      groups = ["cli_utilities"]
+    - name: chmod_(command)
+    - name: chown_(command)
+    - name: cp_(command)
+    - name: dd_(command)
+    - name: du_(command)
+    - name: df_(command)
+    - name: file_(command)
+    - name: ln_(command)
+    - name: ls_(command)
+    - name: mkdir_(command)
+    - name: mv_(command)
+    - name: pwd_(command)
+    - name: rm_(command)
+    - name: rmdir_(command)
+    - name: tee_(command)
+    - name: touch_(command)
+    - name: type_(command)
+    - name: bg_(command)
+    - name: cron_(command)
+    - name: kill_(command)
+    - name: ps_(command)
+    - name: time_(command)
+    - name: env_(command)
+    - name: exit_(command)
+    - name: uname_(command)
+    - name: who_(command)
+    - name: basename_(command)
+    - name: cut_(command)
+    - name: diff_(command)
+    - name: dirname_(command)
+    - name: head_(command)
+    - name: sed_(command)
+    - name: sort_(command)
+    - name: tail_(command)
+    - name: tr_(command)
+    - name: uniq_(command)
+    - name: wc_(command)
+    - name: xargs_(command)
+    - name: alias_(command)
+    - name: cd_(command)
+    - name: echo_(command)
+    - name: find_(command)
+    - name: grep_(command)
+    - name: man_(command)
+    - name: git
+    - name: ghq_(cli_utility)
+    - name: fzf
+    - name: peco_(cli_utility)
+    - name: xclip
+    - name: tree_(cli_utility)
+    - name: unzip
+    - name: fastfetch
+    - name: neofetch
+    - name: ripgrep
+    - name: bat_(cli_utility)
+    - name: eza_(cli_utility)
+    - name: fd_(cli_utility)
+    - name: delta_(cli_utility)
+    - name: bottom_(cli_utility)
+    - name: nmap
+    - name: jq_(cli_utility)
+
+  # groups = ["tui_utilities"]
+    - name: tui # TUI
+      groups = ["tui_utilities"]
+    - name: vim_(source_code_editor)
+      groups = ["tui_utilities", "source_code_editors"]
+    - name: neovim
+      groups = ["tui_utilities", "source_code_editors"]
+    - name: lazygit
+    - name: tmux
+
+  # groups = ["gui_utilities"]
+    - name: gui # GUI
+      groups = ["gui_utilities"]
+    - name: vscode
+      groups = ["gui_utilities", "source_code_editors"]
+    - name: obsidian_(editor)
+    - name: cyberchef
+
+  # groups = ["desktop_environment_related_technologies"]
+    - name: "xfce_(desktop_environment)"
+      groups = ["desktop_environment_related_technologies"]
+    - name: "thunar"
+      groups = ["desktop_environment_related_technologies", "file_managers"]
+    - name: "i3_(window_manager)"
+      groups = ["desktop_environment_related_technologies", "window_managers"]
+    - name: "wallpaper"
+      groups = ["desktop_environment_related_technologies"]
+    - name: "mate_(desktop_environment)"
+      groups = ["desktop_environment_related_technologies"]
+
+  # groups = ["fonts"]
+    - name: cica_(font)
+      groups = ["fonts"]
+    - name: noto_(font)
+
+  # groups = ["multimedia_compression_and_container_formats"]
+    # image
+    - name: jpeg_(multimedia_compression_and_container_formats)
+      groups = ["multimedia_compression_and_container_formats"]
+    - name: png_(multimedia_compression_and_container_formats)
+    - name: gif_(multimedia_compression_and_container_formats)
+    - name: webp_(multimedia_compression_and_container_formats)
+    # audio
+    - name: mp3_(multimedia_compression_and_container_formats)
+      groups = ["multimedia_compression_and_container_formats"]
+    - name: aac_(multimedia_compression_and_container_formats)
+    - name: flac_(multimedia_compression_and_container_formats)
+    # video
+      groups = ["multimedia_compression_and_container_formats"]
+    - name: wmv_(multimedia_compression_and_container_formats)
+    - name: h264_(multimedia_compression_and_container_formats) # H.264
+    - name: h265_(multimedia_compression_and_container_formats) # H.265
+    - name: vp9_(multimedia_compression_and_container_formats)
+    # multimedia
+    - wav_(multimedia_compression_and_container_formats)
+    - name: mp4_(multimedia_compression_and_container_formats)
+    - name: avi_(multimedia_compression_and_container_formats)
+    - name: matroska_(multimedia_compression_and_container_formats) # mkv
+    - name: webm_(multimedia_compression_and_container_formats)
+    
+  # groups = ["web_browser_related_technologies"]
+    - name: web_browser
+    - name: google_chrome
+    - name: chromium
+    - name: firefox
+    - name: bookmark_(web_browser)
+      groups = ["web_browser_related_technologies"]
+    - name: bookmarklet_(web_browser)
+
+  # groups = ["computer_network_related_technologies"]
+    - name: computer_networking_(computer_network_related_technologies)
+      groups = ["computer_network_related_technologies"]
+    - name: ipv4_(computer_network_related_technologies)
+    - name: ipv6_(computer_network_related_technologies)
+
+  # groups = ["computer_networking_hardware"]
+    - name: router_(computer_networking_hardware)
+      groups = ["computer_networking_hardware"]
+    - name: switch_(computer_networking_hardware)
+    - name: bridge_(computer_networking_hardware)
+    - name: repeater_(computer_networking_hardware)
+    - name: ethernet_hub_(computer_networking_hardware)
+
+  # groups = ["computer_components"] # or "basic_computer_components" ?
+    - name: keyboard_(computer_components)
+      groups = ["computer_components"]
+    - name: mouse_(computer_components)
+    - name: trackball_(computer_components)
+    - name: trackpad_(computer_components)
+    - name: pointing_stick_(computer_components)
+    - name: touchpad_(computer_components)
+    - name: touchscreen_(computer_components)
+    - name: game_controller_(computer_components)
+    - name: grphics_tablet_(computer_components)
+    - name: monitor_(computer_components)
+    - name: printer_(computer_components)
+    - name: graphics_card_(computer_components)
+    - name: usb_flash_drive_(computer_components)
+    - name: memory_card_(computer_components)
+    - name: cpu_(computer_components)
+    - name: motherboard_(computer_components)
+    - name: bios_(computer_components)
+    - name: memory_(computer_components)
+    - name: data_storage_(computer_components)
+    - name: hdd_(computer_components)
+    - name: psu_(computer_components)
+    - name: nic_(computer_components)
+
+  # groups = ["software_development_related_items"]
+    - name: software_testing_(software_development)
+      groups = ["software_development_related_items"]
+    - name: agile_(software_development)
+    - name: test_driven_development_(software_development) # tdd
+    - name: semantic_versioning_(software_development)
+    - name: commit_message_(git)
+    - name: branching_(git)
+
+  # groups = ["standard"] # 規格
+    - name: usb_(standard)
+      groups = ["standard"]
+    - name: ethernet_(standard)
+    - name: thunderbolt_(standard)
+    - name: displayport_(standard)
+    - name: hdmi_(standard)
+
+  # groups = ["organization"] # organization ∋ company
+    - name: google_(company)
+      groups = ["organization"]
+    - name: apple_(company)
+    - name: nvidia_(company)
+    - name:openai_(company)
+    - name: ietf_(organization)
+
+  # groups = ["languages"]
+    - name: japanese_(language)
+      groups = ["languages"]
+    - name: english_(language)
+
+  # groups = ["web_services"]
+    - name: github_(web_service)
+      groups = ["web_services"]
+    - name: gitlab_(web_service)
+    - name: bitbucket_(web_service)
+    - name: sourceforge_(web_service)
+    - name: youtube_(web_service)
+    - name: twitter_(web_service)
+    - name: deepl_(web_service)
+      groups = ["web_services"]
+
+  # groups = ["web_search_engines"]
+    - name: googl_search_(web_search_engines)
+      groups = ["web_search_engines", "web_services"]
+    - name: duckduckgo_(web_search_engines)
+      groups = ["web_search_engines", "web_services"]
+    - name: bing_(web_search_engines)
+      groups = ["web_search_engines", "web_services"]
+    - name: perplexity_ai(web_search_engines)
+      groups = ["web_search_engines", "web_services", "generative_ais"]
+
+  # groups = ["generative_ais"] # generative AIs
+    - name: chatgpt_(generative_ai)
+      groups = ["generative_ais", "web_services"]
+    - name: stable_diffusion_(generative_ai)
+    - name: midjourney_(generative_ai)
+
+  # groups = ["web_sites"]
+    - name: wikipedia_(web_sites)
+      groups = ["web_sites"]
+    - name: mdn_web_docs(web_sites)
+
+  # ungroups 1
+    - name: unified_modeling_language # "uml" ?
+    - name: tpm_(tmux) # or "tmux_plugin_manager" ?
+    - name: astronvim
+    - name: chrome_extension
+    - name: firefox_addon
+    - name: webextensions # "WebExtensions"
+    - name: vscode_extension
+    # TODO: VSCode extensions here?
+
+  # ungroups 2
+    - name: writing
+    - name: security
+    - name: keyboard_shortcut
+    - name: productivity
+    - name: motivation
+    - name: poem
+
+  # project???
+  # groups = ["my_projects"]
+    - name: "projects::myenv"
+      groups = ["my_projects"]
+    - name: "projects::proper7y"
+      groups = ["my_projects", "cli_utilities"]
+    - name: "projects::proper7y"
+    - name: "projects::mypkb"
+    - name: "projects::mymetag"
+    - name: "projects::mypubte"
+    - name: "projects::my_web_tools"
+    - name: "projects::my_web_bookmarklets"
+    - name: "projects::my_web_extensions"
+    - name: "projects::my_wallpapers"
+    - name: "projects::monopolize_my_texts"
+    - name: "projects::disaposable_devel_env"
+    - name: "projects::build_a_pc"
+    - name: "projects::build_a_keyboard"
+  # topic???
+  # groups = ["?"]
+    # - name: "topics::2024_03_xz_utils_backdoor" # (CVE-2024-3094)
+
+  groups:
+    - name: "javascript_related_technologies"
+    - name: "programming_languages"
+
+# ------------------------------------------------
+# Waiting for approval
+
+# ASAP
+- tags_waiting_for_approval:
+  - knowledge_management
+  - personal_knowledge_management
+  - personal_information_management
+  - personal_knowledge_base
+  - knowledge_base
+  - architecture_decision_records # adr
+  - virtualization
+  - virtualbox
+  - docker
+  - xfce
+  - performance # web_performance ?
+  - regular_expression # /regex/regexp? 正規表現
+  - ui
+  - ux
+  - architecture
+  - single_page_application # spa
+  - url
+  - http
+  - semantic_web
+  - web
+  - versioning
+  - cloudflare
+  - vercel
+  - google_cloud
+  - google_map # <- web_services
+  - aws
+  - testing_(software)
+  - ci_cd # CI/CD
+  - ai
+  - llm # LLM
+  - machine_learning
+  - kubernetes # k8s
+  - sql
+  - rdbms # relational database management system
+  - database
+  - mysql
+  - postgresql
+  - nosql
+  - appimage_(package_managers_and_formats)
+  - dpkg_(package_managers_and_formats)
+  - apt_(package_managers_and_formats)
+  - nix_(package_managers_and_formats)
+  - pacman_(package_managers_and_formats)
+  - yay_(package_managers_and_formats)
+  - paru_(package_managers_and_formats)
+  - pamac_(package_managers_and_formats)
+  - snap_(package_managers_and_formats)
+  - homebrew_(package_managers_and_formats)
+  - npm_(package_managers_and_formats) # for nodejs
+  - yarn_(package_managers_and_formats) # for nodejs
+  - bookmarking_(degital)
+  - json
+  - yaml
+  - toml
+  - jquery
+  - mozc
+  - japanese-input
+  - cloudflare
+
+  categories:
+    - name: series::troubleshoot?
+    - name: series::show_system_info
+    - name: series::basic_command
+    - name: series::basic_usage
+    
+# Pending
+- tags_waiting_for_approval:
+  - wiki
+  - svg # <- multimedia_compression_and_container_formats ?
+  - programming
+  - software_development
+  - devops
+  - webdev
+  - beginners
+  - tutorial
+  - handson
+  - news
+  - software_engineering
+  - soft_skill
+  - one_on_one # 1_on_1
+  - computer_science
+  - computer
+  - algorithm
+  - interpreter_(computing)
+  - compiler_(computing)
+  - runtime_(computing)
+  - virtual_machine_(computing)
+  - middleware_(computing)
+  - tor_browser
+  - tor
+  - fastly
+  - vlan # VLAN
+  - wi_fi
+  - mit_license
+  - apache_license
+  - open_source_software # oss
+  - open_source
+  - file_manager
+  - cd # CD
+  - dvd # DVD
+  - flash_memory
+  - ieee # IEEE
+  - www # world_wide_web
+  - w3c # W3C標準
+  - utf_8
+  - unicode
+  - emoji
+  - ajax
+  - dom_(document_object_model)
+  - html5
+  - mocha_(javascript_framework)
+  - pip_(package_managers_and_formats) # for python
+  - rye_(package_managers_and_formats) # for python
+  - cargo_(package_managers_and_formats) # for rust
+  - chocolatey_(package_managers_and_formats)
+  - scoop_(package_managers_and_formats)
+  - winget_(package_managers_and_formats)
+  - f_droid_(package_managers_and_formats)
+  - google_play_(package_managers_and_formats)
+  - microsoft_store_(package_managers_and_formats)
+  - chrome_web_store_(package_managers_and_formats)
+  - mizilla_add_ons_(package_managers_and_formats)
+  - apt-get_(package_managers_and_formats)
+  - aptitude_(package_managers_and_formats)
+  - linux
+  - unix
+  - darwin
+  - oss
+  - deepl
+  - distrowatch_(distrowatch.com)
+  - trusted_platform_module # tpm
+- groupss_waiting_for_approval:
+  - package_managers_and_formats
+- tags_waiting_for_approval:
+  - name: "es2015"
+    aliases = ["ES2015", "ES6"]
+  - name: "es2016"
+    aliases = ["ES2016", "ES7"]
+  - name: "es2017"
+    aliases = ["ES2017", "ES8"]
+  - name: "es2018"
+    aliases = ["ES2018", "ES9"]
+  - name: "es2019"
+    aliases = ["ES2019", "ES10"
+  - name: "es2020"
+    aliases = ["ES2020", "ES11"
+  - name: "es2021"
+    aliases = ["ES2021", "ES12"
+  - name: "es2022"
+    aliases = ["ES2022", "ES13"
+  - name: "es2023"
+    aliases = ["ES2023", "ES14"
+

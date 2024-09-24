@@ -147,6 +147,21 @@ aliases:
     - [Vite ってよく聞くけど何なんですか？ あれは](https://zenn.dev/comm_vue_nuxt/articles/what-is-vite)
     - [Vite (ヴィート) で1分環境構築【React + TypeScript】](https://zenn.dev/reasemi/articles/6869cebde469aa)
 
+### 2024-09-24 テスティングフレームワーク
+
+- 候補：jest, viteset
+- viteset 良さそう
+- わりとどっちでも良さそう
+    - Ref: [Vite は使ってないけど Jest を Vitest に移行する](https://zenn.dev/sa2knight/articles/migrating_vitest_from_jest#%E3%81%AA%E3%81%9C-vitest-%E3%82%92%E9%81%B8%E3%82%93%E3%81%A0%E3%81%AE%E3%81%8B)
+        - > Jest を長らく使い続けていると、職人技や歴史的経緯がプロジェクト上に現れてしまい、何か触れてはいけないもののようになってしまいます。
+- Ref:
+    - [Vite は使ってないけど Jest を Vitest に移行する](https://zenn.dev/sa2knight/articles/migrating_vitest_from_jest)
+
+### 2024-09-24 開発手法
+
+- TDD (テスト駆動開発) したい
+- React にも不慣れなのに、いきなり導入するのは無理じゃない？
+
 ### 2024-09-24 CSS (スタイリング方法) どうするか問題
 
 - 何もわからない
@@ -165,15 +180,6 @@ aliases:
 ### 静的解析ツールLinter/Formatter
 
 TODO:
-
-### テスティングフレームワーク
-
-- viteset vs jest
-- viteset 良さそう
-    - Ref: [Vite は使ってないけど Jest を Vitest に移行する](https://zenn.dev/sa2knight/articles/migrating_vitest_from_jest#%E3%81%AA%E3%81%9C-vitest-%E3%82%92%E9%81%B8%E3%82%93%E3%81%A0%E3%81%AE%E3%81%8B)
-        - > Jest を長らく使い続けていると、職人技や歴史的経緯がプロジェクト上に現れてしまい、何か触れてはいけないもののようになってしまいます。
-- Ref:
-    - [Vite は使ってないけど Jest を Vitest に移行する](https://zenn.dev/sa2knight/articles/migrating_vitest_from_jest)
 
 ### その他
 

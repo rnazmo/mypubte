@@ -10,7 +10,7 @@ last_reviewed_at: TODO:
 categories: ["my-web-tools"]
 tags:
 keywords: ["技術選定", "フロントエンド"]
-title: "2024-09］my-web-tools：色々と技術選定"
+title: "2024-09］my-web-tools：色々と技術選定 (my-web-tools 全体の技術選定)"
 aliases:
 ---
 
@@ -161,6 +161,18 @@ aliases:
 
 - TDD (テスト駆動開発) したい
 - React にも不慣れなのに、いきなり導入するのは無理じゃない？
+- どうしようか
+
+### 2024-09-24 ホスティング
+
+- GitHub Pages で良い
+- **結論：GitHub Pages**
+
+### 2024-09-24 CI
+
+- GitHub Actions で良い
+- **結論：GitHub Actions**
+
 
 ### 2024-09-24 CSS (スタイリング方法) どうするか問題
 
@@ -179,10 +191,14 @@ aliases:
 
 ### 静的解析ツールLinter/Formatter
 
+- ESLint, Prettier
 TODO:
 
 ### その他
 
-storybook???
+- storybook???
+    - [React + Storybook + MSW + Vitestで作る堅牢なフロントエンド開発術](https://zenn.dev/kenfdev/articles/755ae0f65e9dec)
 
-[React + Storybook + MSW + Vitestで作る堅牢なフロントエンド開発術](https://zenn.dev/kenfdev/articles/755ae0f65e9dec)
+### TODO
+
+- **モノレポはどうやって実現する？？？**

@@ -72,9 +72,8 @@ aliases:
 - `feat(neovim)/setup-config`
 - ブランチ切らなくても良くない？
 
-### 設定ファイルのディレクトリ構造はどうする？
 
-#### どのディレクトリにinit.luaを置けばよいのか
+### どのディレクトリにinit.luaを置けばよいのか
 
 > どのディレクトリにinit.luaを置けばよいのか、どこのinit.luaが読みこまれるのか
 
@@ -85,11 +84,12 @@ $ nvim -V1 -es -c "echo stdpath('config') . '/init.vim'" -cq
 /home/toor/.config/nvim/init.vim
 ```
 
-#### setup file structure
+### 設定ファイルのディレクトリ構造はどうする？
 
 - Ref:
     - [How I Setup Neovim To Make It AMAZING in 2024: The Ultimate Guide - YouTube](https://www.youtube.com/watch?v=6pAG3BHurdM&t=183s)
     - [How I Setup Neovim On My Mac To Make it AMAZING in 2024](https://www.josean.com/posts/how-to-setup-neovim-2024)
+    - [dev-environment-files／.config／nvim at main · josean-dev／dev-environment-files](https://github.com/josean-dev/dev-environment-files/tree/cb670e8890ca9d8baf978b38ed75987b742032e6/.config/nvim)
     - [dotfiles／dot_config／nvim at main · ganyariya／dotfiles](https://github.com/ganyariya/dotfiles/tree/cee57f4349f524b4d73b1fa3394363ea4549312f/dot_config/nvim)
 
 ```sh
@@ -116,16 +116,27 @@ $ tree ~/.config/nvim
 5 directories, 5 files
 ```
 
-少し脇道にそれるが、上記の動画でやってる操作が便利そう：
+### 超基本的な設定を書く
 
-- `$ nvim .` で編集するファイルを良い感じに選択できる
-- (nvim 中で) `:Explore` コマンドで、そのまま別のファイルを編集できる
-- (nvim 中で) `:e foo/bar/baz.txt` コマンドで、そのまま別のファイルを編集できる
-- neovim の設定ファイルを編集中に、(nvim 中で) `source %` でその設定を適用
+- 上記の動画を見ながら作業する
+    - 少し脇道にそれるが、上記の動画でやってる便利そうな操作のメモ
+        - `$ nvim .` で編集するファイルを良い感じに選択できる
+        - (nvim 中で) `:Explore` コマンドで、そのまま別のファイルを編集できる
+        - (nvim 中で) `:e foo/bar/baz.txt` コマンドで、そのまま別のファイルを編集できる
+        - neovim の設定ファイルを編集中に、(nvim 中で) `source %` でその設定を適用
+        - `:h autoindent`
+- `vim.cmd("let g:netrw_liststyle = 3")`
+    - この設定は何？
+- `vim.g.mapleader = " "`
+    - この設定は何？
+    - leaderキー とは何？
+        - 私のキーボード配列だと何か衝突しそうじゃない？
+            - Space 長押しで Ctrl にしてる
+            - 動く？
+        - [VimのLeaderキーの設定｜かつお](https://note.com/noabou/n/n8b6cd0ced53e)
+            - > デフォルトでは \ を押すと、○○する。という状態。
 
 ### 設定ファイル -> myenv-v3 のシンボリックリンクを貼る
-
-### 超基本的な設定を書く
 
 TODO:
 
@@ -133,7 +144,7 @@ TODO:
 
 TODO:
 
-### 以降はプラグインを試しつつ導    入していく
+### 以降はプラグインを試しつつ導入していく
 
 TODO:
 

@@ -74,7 +74,54 @@ aliases:
 
 ### 設定ファイルのディレクトリ構造はどうする？
 
-TODO:
+#### どのディレクトリにinit.luaを置けばよいのか
+
+> どのディレクトリにinit.luaを置けばよいのか、どこのinit.luaが読みこまれるのか
+
+[lazy.nvimのインストール方法とその使い方](https://zenn.dev/siteyo/articles/980b6205e93914#init.lua)
+
+```sh
+$ nvim -V1 -es -c "echo stdpath('config') . '/init.vim'" -cq
+/home/toor/.config/nvim/init.vim
+```
+
+#### setup file structure
+
+- Ref:
+    - [How I Setup Neovim To Make It AMAZING in 2024: The Ultimate Guide - YouTube](https://www.youtube.com/watch?v=6pAG3BHurdM&t=183s)
+    - [How I Setup Neovim On My Mac To Make it AMAZING in 2024](https://www.josean.com/posts/how-to-setup-neovim-2024)
+    - [dotfiles／dot_config／nvim at main · ganyariya／dotfiles](https://github.com/ganyariya/dotfiles/tree/cee57f4349f524b4d73b1fa3394363ea4549312f/dot_config/nvim)
+
+```sh
+$ mkdir -p ~/.config/nvim/lua/rnazmo/core
+$ mkdir -p ~/.config/nvim/lua/rnazmo/plugins
+$ touch ~/.config/nvim/init.lua
+$ touch ~/.config/nvim/lua/rnazmo/lazy.lua
+$ touch ~/.config/nvim/lua/rnazmo/core/init.lua
+$ touch ~/.config/nvim/lua/rnazmo/core/keymaps.lua
+$ touch ~/.config/nvim/lua/rnazmo/core/options.lua
+
+$ tree ~/.config/nvim
+/home/toor/.config/nvim
+├── init.lua
+└── lua
+    └── rnazmo
+        ├── core
+        │   ├── init.lua
+        │   ├── keymaps.lua
+        │   └── options.lua
+        ├── lazy.lua
+        └── plugins
+
+5 directories, 5 files
+```
+
+少し脇道にそれるが、上記の動画でやってる操作が便利そう：
+
+- `$ nvim .` で編集するファイルを良い感じに選択できる
+- (nvim 中で) `:Explore` コマンドで、そのまま別のファイルを編集できる
+- (nvim 中で) `:e foo/bar/baz.txt` コマンドで、そのまま別のファイルを編集できる
+- neovim の設定ファイルを編集中に、(nvim 中で) `source %` でその設定を適用
 
 ### 設定ファイル -> myenv-v3 のシンボリックリンクを貼る
 
